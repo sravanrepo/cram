@@ -1,0 +1,8125 @@
+{
+  "tables_count": 1178,
+  "key_tables": [
+    "ADAPTERSUPPORTUDMCLASS",
+    "AGENTDEVICEGROUP",
+    "AGENTPROFILENODEPLUGIN",
+    "AMDOCS_NOTIF_NEO_PRO11_DEVICE",
+    "APPLICATIONNODE_O",
+    "APPLICATIONNODE_R",
+    "APPLICATIONTYPENODETYPE",
+    "ARCHCIRCUIT_REPORT",
+    "ARCHDEVICEOBJECT_O",
+    "ARCHDEVICEOBJECT_R",
+    "ARCHDEVICETYPE_M",
+    "ARCHDEVICE_O",
+    "ARCHDEVICE_R",
+    "ARC_NODE_EXT_O",
+    "BUSINESSENTITYLOCATION",
+    "CABLELOCATION_O",
+    "CABLELOCATION_R",
+    "CARDCOMPATIBILITY",
+    "CARDINSLOT_O",
+    "CARDINSLOT_R",
+    "CARDTYPESLOTTYPE",
+    "CARDTYPE_M",
+    "CARD_EXT_O",
+    "CARD_NAMING",
+    "CARD_O",
+    "CARD_R",
+    "CIRCUITTYPEPORTTYPE",
+    "CIRCUITTYPEPORTTYPE_BKP",
+    "CONDUITLOCATION_O",
+    "CONDUITLOCATION_R",
+    "CONTAINERDEF",
+    "CONTROLTEMPLATEINSTANCENODE",
+    "CROSSCONNECTIONTYPEPORTTYPE",
+    "CUST_DELETE_AGGPORT",
+    "CUST_DEVICE_DECOM_STATUS",
+    "DEVICEGROUP",
+    "DEVICEGROUPTYPE_M",
+    "DEVICE_DIMENSION_UPDATE",
+    "DEVICE_RACK",
+    "DUP_LOGICAL_PORTS",
+    "EXISTING_AGGREGATED_PORTS",
+    "FSYNC_CARDCOMP_260625",
+    "GM_DEVICES_TEMP",
+    "IE_CARD_ATTR_SETTINGS",
+    "IE_CARD_ATTR_SETTINGS_1",
+    "IE_CARD_INST",
+    "IE_CARD_INST_1",
+    "IE_EQUIP_ATTRIBUTE_TEMP",
+    "IE_EQUIP_ATTRIBUTE_TEMP_1309",
+    "IE_EQUIP_ATTRIBUTE_TEMP_1410",
+    "IE_EQUIP_INST_TEMP",
+    "IE_EQUIP_INST_TEMP_1309",
+    "IE_EQUIP_INST_TEMP_1410",
+    "IE_PORT_ATTR_SETTINGS",
+    "IE_PORT_ATTR_SETTINGS_1",
+    "IE_PORT_ATTR_SETTINGS_2",
+    "IE_SLOT_INST",
+    "IMPORTFILE",
+    "IMPORTFILELOG",
+    "IMPORTFILETYPE_M",
+    "LOCATIONTYPELOCATIONTYPE",
+    "LOCATIONTYPE_M",
+    "LOCATIONX",
+    "LOCATION_O",
+    "LOCATION_R",
+    "LOGICALENVIRONMENTCARD_O",
+    "LOGICALENVIRONMENTCARD_R",
+    "LOGICALENVIRONMENTNODE_O",
+    "LOGICALENVIRONMENTNODE_R",
+    "LOGICALENVIRONMENTPORT_O",
+    "LOGICALENVIRONMENTPORT_R",
+    "LOGICALENVTYPECARDTYPE",
+    "LOGICALENVTYPENODETYPE",
+    "LOGICALENVTYPEPORTTYPE",
+    "LOGICAL_PORT",
+    "MANAGEDNODEDEF",
+    "NAMING_CARD_EXT_O",
+    "NAMING_NODE_EXT_O",
+    "NODEACCESSPARAMVALUE",
+    "NODEACCESSPARAM_M",
+    "NODECREDENTIAL",
+    "NODEDEFALLOWEDINSHELFTYPE",
+    "NODEDEFSHELFTYPE",
+    "NODEDEF_M",
+    "NODEINRACKSHELF_O",
+    "NODEINRACKSHELF_R",
+    "NODEMAXPORTNUMBER",
+    "NODEPLUGIN",
+    "NODEPLUGINAGENTPROTOCOL",
+    "NODEPLUGINCREDENTIAL",
+    "NODETYPE_M",
+    "NODEX",
+    "NODEXDEP",
+    "NODE_ATM_EXT_O",
+    "NODE_CABINET_EXT_O",
+    "NODE_CLUSTER_EXT_DATA_BKP",
+    "NODE_CLUSTER_EXT_O",
+    "NODE_CONVERTER_EXT_O",
+    "NODE_CTP_EXT_O",
+    "NODE_CUST_EXT_O",
+    "NODE_DR_CONTROLLER_EXT_O",
+    "NODE_DSLAM_EXT_O",
+    "NODE_DSL_CPE_O",
+    "NODE_FIREWALL_EXT_O",
+    "NODE_FOOTPRINT_EXT_O",
+    "NODE_GEN1_EXT_O",
+    "NODE_GEN2_EXT_O",
+    "NODE_GENERIC_EXT_O",
+    "NODE_GE_ACT_EXT_O",
+    "NODE_LAN_ATTRICA_EXT_O",
+    "NODE_LAN_EXT_O",
+    "NODE_NAMING",
+    "NODE_O",
+    "NODE_OLO_EXT_O",
+    "NODE_POWER_EXT_O",
+    "NODE_PRESPANEL_EXT_O",
+    "NODE_R",
+    "NODE_ROUTER_EXT_O",
+    "NODE_SERVER_EXT_O",
+    "NODE_SWITCH_EXT_O",
+    "NODE_WALLBOX_EXT_O",
+    "NODE_WDM_EXT_O",
+    "NODE_WITH_COLTNEO_MGMT_REGION_AS_1",
+    "PARTITIONPOLICYNODETYPE",
+    "PARTITIONPOLICYNTNODEDEF",
+    "PARTITIONPOLICYPORTTYPE",
+    "PARTITIONTIMESLOT_O",
+    "PARTITIONTIMESLOT_R",
+    "PARTITIONTYPENODETYPE",
+    "PARTITIONTYPENTNODEDEF",
+    "PARTITIONTYPEPORTTYPE",
+    "PI9_PORTS",
+    "PI9_TIMESLOTS",
+    "PORTDEF_M",
+    "PORTPVC",
+    "PORTS_TO_BE_DELETED_ITR1",
+    "PORTS_TO_BE_DELETED_ITR1_V3",
+    "PORTS_TO_BE_DELETED_ITR2",
+    "PORTS_TO_BE_DELETED_ITR2_V3",
+    "PORTTYPEHIERARCHY",
+    "PORTTYPEHIERARCHY_BKP",
+    "PORTTYPE_M",
+    "PORT_ELECTRICAL_EXT_O",
+    "PORT_ELECTRICAL_EXT_O_LGPORTDELETE_BKP_V2",
+    "PORT_ELECTRICAL_EXT_O_LGPORTDELETE_BKP_V3",
+    "PORT_EXT_O",
+    "PORT_EXT_O_LGPORTDELETE_BKP_V2",
+    "PORT_EXT_O_LGPORTDELETE_BKP_V3",
+    "PORT_LOGICAL_EXT_O",
+    "PORT_MISSING_NOTIFICATION",
+    "PORT_MIXED_EXT_O",
+    "PORT_MIXED_EXT_O_LGPORTDELETE_BKP_V2",
+    "PORT_MIXED_EXT_O_LGPORTDELETE_BKP_V3",
+    "PORT_O",
+    "PORT_OPTICAL_EXT_O",
+    "PORT_OPTICAL_EXT_O_LGPORTDELETE_BKP_V2",
+    "PORT_OPTICAL_EXT_O_LGPORTDELETE_BKP_V3",
+    "PORT_O_LGPORTDELETE_BKP_V2",
+    "PORT_O_LGPORTDELETE_BKP_V3",
+    "PORT_R",
+    "PORT_RENAME_USERS",
+    "PORT_R_LGPORTDELETE_BKP_V2",
+    "PORT_R_LGPORTDELETE_BKP_V3",
+    "REMAINING_DEVICES",
+    "REPORTTYPE",
+    "RPBUILDTEMPLATELOCATION",
+    "RPBUILDTEMPLATENODE",
+    "RPNODENODETYPE",
+    "RPPORTMAPPING_M",
+    "RVMVALIDWILDCARDOBJECTS",
+    "SHELFTYPESHELFTYPE",
+    "SHELFTYPESLOTTYPE",
+    "SHELFTYPE_M",
+    "SHELF_CABINET_EXT_O",
+    "SHELF_O",
+    "SHELF_R",
+    "SLOTSHELFINRACKSHELF_O",
+    "SLOTSHELFINRACKSHELF_R",
+    "SLOTTYPE_M",
+    "SLOT_EXT_O",
+    "SLOT_O",
+    "SLOT_R",
+    "SLOT_RENAME_USERS",
+    "SPSITETYPELOCATIONTYPE",
+    "SPZONENODE_O",
+    "SPZONENODE_R",
+    "SPZONETYPENODETYPE",
+    "STG_LOGICAL_PORTS",
+    "STG_LP_MOVE_CHILDREN_PORTS",
+    "STG_PRO_DEVICE_FORMS_UI_CRAMER",
+    "SUBSCRIBERLOCATION_FIX_R",
+    "SUBSCRIBERLOCATION_O",
+    "SUBSCRIBERLOCATION_R",
+    "SUPPORT",
+    "TEMPLATECARDREF",
+    "TEMPLATESLOTREF",
+    "TEMP_MIGRATION_CARD_MAP",
+    "TEMP_MIGRATION_NODEDEF_RULE",
+    "TEMP_MIGRATION_PORT_MAP",
+    "TEMP_NEWNODE",
+    "TEMP_NEWNODE_CARD",
+    "TEMP_NEWPORT",
+    "TEMP_OLDANDNEW_PORTS",
+    "TEMP_OLDPORT",
+    "TIMESLOTTEMPLATEROW_M",
+    "TIMESLOTTEMPLATE_M",
+    "TIMESLOTTIMESLOT_O",
+    "TIMESLOTTIMESLOT_R",
+    "TIMESLOTTYPE_M",
+    "TIMESLOT_NAMING",
+    "TIMESLOT_O",
+    "TIMESLOT_R",
+    "TOPTYPENODETYPE",
+    "TOPTYPEPORTTYPE",
+    "T_MASTER_FLAG_OLOLINK_NODES",
+    "T_MASTER_FLAG_OLOLINK_NODES_NEO",
+    "T_MASTER_FLAG_OLO_VLAN_SEG_DEVICE_AND_CONNECTIONS",
+    "T_MASTER_FLAG_OLO_VLAN_SEG_DEVICE_AND_CONNECTIONS_NEO",
+    "T_PARTITIONTIMESLOT",
+    "VIRTUALNODE",
+    "VIRTUALNODECONNECTION"
+  ],
+  "sample_schema": {
+    "ADAPTERSUPPORTUDMCLASS": [
+      {
+        "column": "ADAPTERSUPPORTUDMCLASSID",
+        "type": "NUMBER",
+        "length": 22,
+        "nullable": "N"
+      },
+      {
+        "column": "ASU2ADAPTER",
+        "type": "NUMBER",
+        "length": 22,
+        "nullable": "N"
+      },
+      {
+        "column": "ASU2SUPPORT",
+        "type": "NUMBER",
+        "length": 22,
+        "nullable": "N"
+      },
+      {
+        "column": "ASU2UDMCLASS",
+        "type": "NUMBER",
+        "length": 22,
+        "nullable": "N"
+      },
+      {
+        "column": "PRIMARYUDMCLASS",
+        "type": "NUMBER",
+        "length": 22,
+        "nullable": "Y"
+      }
+    ],
+    "AGENTDEVICEGROUP": [
+      {
+        "column": "AGENTDEVICEGROUPID",
+        "type": "NUMBER",
+        "length": 22,
+        "nullable": "N"
+      },
+      {
+        "column": "AGENTDEVICEGROUP2AGENT",
+        "type": "NUMBER",
+        "length": 22,
+        "nullable": "N"
+      },
+      {
+        "column": "AGENTDEVICEGROUP2DEVICEGROUP",
+        "type": "NUMBER",
+        "length": 22,
+        "nullable": "N"
+      }
+    ],
+    "AGENTPROFILENODEPLUGIN": [
+      {
+        "column": "AGENTPROFILENODEPLUGINID",
+        "type": "NUMBER",
+        "length": 22,
+        "nullable": "N"
+      },
+      {
+        "column": "AGPFNP2AGENTPROFILE",
+        "type": "NUMBER",
+        "length": 22,
+        "nullable": "N"
+      },
+      {
+        "column": "AGPFNP2NODEPLUGIN",
+        "type": "NUMBER",
+        "length": 22,
+        "nullable": "N"
+      }
+    ],
+    "AMDOCS_NOTIF_NEO_PRO11_DEVICE": [
+      {
+        "column": "TMF639RESCHANGENOTIFICATIONID",
+        "type": "NUMBER",
+        "length": 22,
+        "nullable": "N"
+      },
+      {
+        "column": "JSONPAYLOAD",
+        "type": "CLOB",
+        "length": 4000,
+        "nullable": "N"
+      }
+    ],
+    "APPLICATIONNODE_O": [
+      {
+        "column": "APPLICATIONNODEID",
+        "type": "NUMBER",
+        "length": 22,
+        "nullable": "N"
+      },
+      {
+        "column": "APPNODE2NODE",
+        "type": "NUMBER",
+        "length": 22,
+        "nullable": "Y"
+      },
+      {
+        "column": "APPNODE2APPLICATION",
+        "type": "NUMBER",
+        "length": 22,
+        "nullable": "Y"
+      },
+      {
+        "column": "APPNODE2APPRELATIONSHIPTYPE",
+        "type": "NUMBER",
+        "length": 22,
+        "nullable": "N"
+      },
+      {
+        "column": "RPPLANID",
+        "type": "NUMBER",
+        "length": 22,
+        "nullable": "N"
+      }
+    ],
+    "APPLICATIONNODE_R": [
+      {
+        "column": "APPLICATIONNODEID",
+        "type": "NUMBER",
+        "length": 22,
+        "nullable": "N"
+      },
+      {
+        "column": "RPPLANID",
+        "type": "NUMBER",
+        "length": 22,
+        "nullable": "N"
+      },
+      {
+        "column": "APPNODE2APPLICATION",
+        "type": "NUMBER",
+        "length": 22,
+        "nullable": "Y"
+      },
+      {
+        "column": "APPNODE2APPLICATIONPLAN",
+        "type": "NUMBER",
+        "length": 22,
+        "nullable": "Y"
+      },
+      {
+        "column": "APPNODE2NODE",
+        "type": "NUMBER",
+        "length": 22,
+        "nullable": "Y"
+      },
+      {
+        "column": "APPNODE2NODEPLAN",
+        "type": "NUMBER",
+        "length": 22,
+        "nullable": "Y"
+      },
+      {
+        "column": "DELETEFLAG",
+        "type": "NUMBER",
+        "length": 22,
+        "nullable": "N"
+      }
+    ],
+    "APPLICATIONTYPENODETYPE": [
+      {
+        "column": "APPLICATIONTYPENODETYPEID",
+        "type": "NUMBER",
+        "length": 22,
+        "nullable": "N"
+      },
+      {
+        "column": "ATNT2APPRELATIONSHIPTYPE",
+        "type": "NUMBER",
+        "length": 22,
+        "nullable": "N"
+      },
+      {
+        "column": "ATNT2APPLICATIONTYPE",
+        "type": "NUMBER",
+        "length": 22,
+        "nullable": "N"
+      },
+      {
+        "column": "ATNT2NODETYPE",
+        "type": "NUMBER",
+        "length": 22,
+        "nullable": "N"
+      },
+      {
+        "column": "VALIDATIONCALLOUT",
+        "type": "VARCHAR2",
+        "length": 960,
+        "nullable": "Y"
+      }
+    ],
+    "ARCHCIRCUIT_REPORT": [
+      {
+        "column": "ARCH_CIRCUIT_ID",
+        "type": "NUMBER",
+        "length": 22,
+        "nullable": "Y"
+      },
+      {
+        "column": "ARCH_CIRCUIT_NAME",
+        "type": "VARCHAR2",
+        "length": 400,
+        "nullable": "Y"
+      },
+      {
+        "column": "ARCH_CIRCUITTYPE",
+        "type": "NUMBER",
+        "length": 22,
+        "nullable": "Y"
+      },
+      {
+        "column": "ARCH_CIRCUITTYPE_NAME",
+        "type": "VARCHAR2",
+        "length": 400,
+        "nullable": "Y"
+      },
+      {
+        "column": "EXTENSION_TABLE_NAME",
+        "type": "VARCHAR2",
+        "length": 400,
+        "nullable": "Y"
+      },
+      {
+        "column": "ATTRIBUTE_COLUMN_NAME",
+        "type": "CLOB",
+        "length": 4000,
+        "nullable": "Y"
+      },
+      {
+        "column": "ATTRIBUTE_GUI_NAME",
+        "type": "VARCHAR2",
+        "length": 400,
+        "nullable": "Y"
+      },
+      {
+        "column": "MANDATORY",
+        "type": "VARCHAR2",
+        "length": 400,
+        "nullable": "Y"
+      },
+      {
+        "column": "READONLY",
+        "type": "VARCHAR2",
+        "length": 400,
+        "nullable": "Y"
+      },
+      {
+        "column": "SEARCHABLE",
+        "type": "VARCHAR2",
+        "length": 400,
+        "nullable": "Y"
+      },
+      {
+        "column": "ENUMERATION",
+        "type": "VARCHAR2",
+        "length": 400,
+        "nullable": "Y"
+      },
+      {
+        "column": "DEFAULTVALUE",
+        "type": "VARCHAR2",
+        "length": 400,
+        "nullable": "Y"
+      }
+    ],
+    "ARCHDEVICEOBJECT_O": [
+      {
+        "column": "ARCHDEVICEOBJECTID",
+        "type": "NUMBER",
+        "length": 22,
+        "nullable": "N"
+      },
+      {
+        "column": "ARCHDEVICEOBJECT2OBJECT",
+        "type": "NUMBER",
+        "length": 22,
+        "nullable": "Y"
+      },
+      {
+        "column": "ARCHDEVICEOBJECT2RELATION",
+        "type": "NUMBER",
+        "length": 22,
+        "nullable": "Y"
+      },
+      {
+        "column": "ARCHDEVICEOBJECT2DIMOBJECT",
+        "type": "NUMBER",
+        "length": 22,
+        "nullable": "Y"
+      },
+      {
+        "column": "RPPLANID",
+        "type": "NUMBER",
+        "length": 22,
+        "nullable": "N"
+      },
+      {
+        "column": "SEQUENCE",
+        "type": "NUMBER",
+        "length": 22,
+        "nullable": "Y"
+      },
+      {
+        "column": "ARCHDEVICEOBJECT2ARCHDEVICE",
+        "type": "NUMBER",
+        "length": 22,
+        "nullable": "Y"
+      }
+    ],
+    "ARCHDEVICEOBJECT_R": [
+      {
+        "column": "ARCHDEVICEOBJECTID",
+        "type": "NUMBER",
+        "length": 22,
+        "nullable": "N"
+      },
+      {
+        "column": "ARCHDEVICEOBJECT2ARCHDEVICE",
+        "type": "NUMBER",
+        "length": 22,
+        "nullable": "N"
+      },
+      {
+        "column": "ARCHDEVICEOBJEC2ARCHDEVICEPLAN",
+        "type": "NUMBER",
+        "length": 22,
+        "nullable": "N"
+      },
+      {
+        "column": "ARCHDEVICEOBJECT2OBJECT",
+        "type": "NUMBER",
+        "length": 22,
+        "nullable": "N"
+      },
+      {
+        "column": "ARCHDEVICEOBJECT2OBJECTPLAN",
+        "type": "NUMBER",
+        "length": 22,
+        "nullable": "N"
+      },
+      {
+        "column": "RPPLANID",
+        "type": "NUMBER",
+        "length": 22,
+        "nullable": "N"
+      },
+      {
+        "column": "DELETEFLAG",
+        "type": "NUMBER",
+        "length": 22,
+        "nullable": "N"
+      }
+    ],
+    "ARCHDEVICETYPE_M": [
+      {
+        "column": "ARCHDEVICETYPEID",
+        "type": "NUMBER",
+        "length": 22,
+        "nullable": "N"
+      },
+      {
+        "column": "ARCHDEVICETYPE2DIMOBJECT",
+        "type": "NUMBER",
+        "length": 22,
+        "nullable": "Y"
+      },
+      {
+        "column": "TABLENAME",
+        "type": "VARCHAR2",
+        "length": 200,
+        "nullable": "Y"
+      },
+      {
+        "column": "DESCRIPTION",
+        "type": "VARCHAR2",
+        "length": 4000,
+        "nullable": "Y"
+      },
+      {
+        "column": "ARCHDEVICETYPE2GRAPHICSBITMAP",
+        "type": "NUMBER",
+        "length": 22,
+        "nullable": "Y"
+      },
+      {
+        "column": "LABEL",
+        "type": "NUMBER",
+        "length": 22,
+        "nullable": "Y"
+      },
+      {
+        "column": "ISVISIBLE",
+        "type": "NUMBER",
+        "length": 22,
+        "nullable": "Y"
+      },
+      {
+        "column": "CLASS",
+        "type": "VARCHAR2",
+        "length": 200,
+        "nullable": "Y"
+      },
+      {
+        "column": "ARCHDEVICETYPE2BROWSERBITMAP",
+        "type": "NUMBER",
+        "length": 22,
+        "nullable": "Y"
+      },
+      {
+        "column": "NAME",
+        "type": "VARCHAR2",
+        "length": 200,
+        "nullable": "Y"
+      }
+    ],
+    "ARCHDEVICE_O": [
+      {
+        "column": "ARCHDEVICEID",
+        "type": "NUMBER",
+        "length": 22,
+        "nullable": "N"
+      },
+      {
+        "column": "SUBTYPE",
+        "type": "VARCHAR2",
+        "length": 200,
+        "nullable": "Y"
+      },
+      {
+        "column": "RELATIVENAME",
+        "type": "VARCHAR2",
+        "length": 200,
+        "nullable": "Y"
+      },
+      {
+        "column": "RPPLANID",
+        "type": "NUMBER",
+        "length": 22,
+        "nullable": "N"
+      },
+      {
+        "column": "ISVISIBLE",
+        "type": "NUMBER",
+        "length": 22,
+        "nullable": "Y"
+      },
+      {
+        "column": "LASTMODIFIEDBY2DIMUSER",
+        "type": "NUMBER",
+        "length": 22,
+        "nullable": "Y"
+      },
+      {
+        "column": "LASTMODIFIEDDATE",
+        "type": "DATE",
+        "length": 7,
+        "nullable": "Y"
+      },
+      {
+        "column": "MARKEDFORDELETE",
+        "type": "NUMBER",
+        "length": 22,
+        "nullable": "Y"
+      },
+      {
+        "column": "NAME",
+        "type": "VARCHAR2",
+        "length": 200,
+        "nullable": "Y"
+      },
+      {
+        "column": "OBJECTID",
+        "type": "VARCHAR2",
+        "length": 256,
+        "nullable": "Y"
+      },
+      {
+        "column": "CREATEDDATE",
+        "type": "DATE",
+        "length": 7,
+        "nullable": "Y"
+      },
+      {
+        "column": "ARCHDEVICE2PROVISIONSTATUS",
+        "type": "NUMBER",
+        "length": 22,
+        "nullable": "Y"
+      },
+      {
+        "column": "NOTES",
+        "type": "VARCHAR2",
+        "length": 4000,
+        "nullable": "Y"
+      },
+      {
+        "column": "ARCHDEVICE2RPBUILDTEMPLATE",
+        "type": "NUMBER",
+        "length": 22,
+        "nullable": "Y"
+      },
+      {
+        "column": "CREATEDBY2DIMUSER",
+        "type": "NUMBER",
+        "length": 22,
+        "nullable": "Y"
+      },
+      {
+        "column": "DESCRIPTION",
+        "type": "VARCHAR2",
+        "length": 4000,
+        "nullable": "Y"
+      },
+      {
+        "column": "LABEL",
+        "type": "NUMBER",
+        "length": 22,
+        "nullable": "Y"
+      },
+      {
+        "column": "FULLNAME",
+        "type": "VARCHAR2",
+        "length": 200,
+        "nullable": "Y"
+      },
+      {
+        "column": "ALIAS1",
+        "type": "VARCHAR2",
+        "length": 200,
+        "nullable": "Y"
+      },
+      {
+        "column": "SUBSTATUS",
+        "type": "VARCHAR2",
+        "length": 200,
+        "nullable": "Y"
+      },
+      {
+        "column": "ALIAS2",
+        "type": "VARCHAR2",
+        "length": 200,
+        "nullable": "Y"
+      },
+      {
+        "column": "ISCOMPLETEINPLAN",
+        "type": "NUMBER",
+        "length": 22,
+        "nullable": "Y"
+      },
+      {
+        "column": "ARCHDEVICE2ARCHDEVICETYPE",
+        "type": "NUMBER",
+        "length": 22,
+        "nullable": "Y"
+      },
+      {
+        "column": "ARCHDEVICE2FUNCTIONALSTATUS",
+        "type": "NUMBER",
+        "length": 22,
+        "nullable": "Y"
+      }
+    ],
+    "ARCHDEVICE_R": [
+      {
+        "column": "ARCHDEVICEID",
+        "type": "NUMBER",
+        "length": 22,
+        "nullable": "N"
+      },
+      {
+        "column": "RPPLANID",
+        "type": "NUMBER",
+        "length": 22,
+        "nullable": "N"
+      },
+      {
+        "column": "DELETEFLAG",
+        "type": "NUMBER",
+        "length": 22,
+        "nullable": "N"
+      }
+    ],
+    "ARC_NODE_EXT_O": [
+      {
+        "column": "ARCHDEVICEID",
+        "type": "NUMBER",
+        "length": 22,
+        "nullable": "N"
+      },
+      {
+        "column": "SITE",
+        "type": "VARCHAR2",
+        "length": 200,
+        "nullable": "Y"
+      },
+      {
+        "column": "ORDERNUMBER",
+        "type": "VARCHAR2",
+        "length": 200,
+        "nullable": "Y"
+      },
+      {
+        "column": "RPPLANID",
+        "type": "NUMBER",
+        "length": 22,
+        "nullable": "N"
+      },
+      {
+        "column": "LABEL",
+        "type": "NUMBER",
+        "length": 22,
+        "nullable": "Y"
+      },
+      {
+        "column": "ISVISIBLE",
+        "type": "NUMBER",
+        "length": 22,
+        "nullable": "Y"
+      }
+    ],
+    "BUSINESSENTITYLOCATION": [
+      {
+        "column": "BEL2BUSINESSENTITY",
+        "type": "NUMBER",
+        "length": 22,
+        "nullable": "N"
+      },
+      {
+        "column": "BEL2LOCATION",
+        "type": "NUMBER",
+        "length": 22,
+        "nullable": "N"
+      },
+      {
+        "column": "RPPLANID",
+        "type": "NUMBER",
+        "length": 22,
+        "nullable": "N"
+      }
+    ],
+    "CABLELOCATION_O": [
+      {
+        "column": "CABLELOCATIONID",
+        "type": "NUMBER",
+        "length": 22,
+        "nullable": "N"
+      },
+      {
+        "column": "CBLC2CABLE",
+        "type": "NUMBER",
+        "length": 22,
+        "nullable": "Y"
+      },
+      {
+        "column": "CBLC2LOCATION",
+        "type": "NUMBER",
+        "length": 22,
+        "nullable": "Y"
+      },
+      {
+        "column": "SEQUENCE",
+        "type": "NUMBER",
+        "length": 22,
+        "nullable": "Y"
+      },
+      {
+        "column": "SECTIONLENGTH",
+        "type": "NUMBER",
+        "length": 22,
+        "nullable": "Y"
+      },
+      {
+        "column": "SPARELENGTH",
+        "type": "NUMBER",
+        "length": 22,
+        "nullable": "Y"
+      },
+      {
+        "column": "ISVISIBLE",
+        "type": "NUMBER",
+        "length": 22,
+        "nullable": "Y"
+      },
+      {
+        "column": "LABEL",
+        "type": "NUMBER",
+        "length": 22,
+        "nullable": "Y"
+      },
+      {
+        "column": "RPPLANID",
+        "type": "NUMBER",
+        "length": 22,
+        "nullable": "N"
+      }
+    ],
+    "CABLELOCATION_R": [
+      {
+        "column": "CABLELOCATIONID",
+        "type": "NUMBER",
+        "length": 22,
+        "nullable": "N"
+      },
+      {
+        "column": "RPPLANID",
+        "type": "NUMBER",
+        "length": 22,
+        "nullable": "N"
+      },
+      {
+        "column": "CBLC2CABLE",
+        "type": "NUMBER",
+        "length": 22,
+        "nullable": "Y"
+      },
+      {
+        "column": "CBLC2CABLEPLAN",
+        "type": "NUMBER",
+        "length": 22,
+        "nullable": "Y"
+      },
+      {
+        "column": "CBLC2LOCATION",
+        "type": "NUMBER",
+        "length": 22,
+        "nullable": "Y"
+      },
+      {
+        "column": "CBLC2LOCATIONPLAN",
+        "type": "NUMBER",
+        "length": 22,
+        "nullable": "Y"
+      },
+      {
+        "column": "DELETEFLAG",
+        "type": "NUMBER",
+        "length": 22,
+        "nullable": "N"
+      }
+    ],
+    "CARDCOMPATIBILITY": [
+      {
+        "column": "CARDCOMPATIBILITYID",
+        "type": "NUMBER",
+        "length": 22,
+        "nullable": "N"
+      },
+      {
+        "column": "CARDCOMPATIBILITY2CARDTYPE",
+        "type": "NUMBER",
+        "length": 22,
+        "nullable": "N"
+      },
+      {
+        "column": "CARDCOMPATIBILITY2SLOTTYPE",
+        "type": "NUMBER",
+        "length": 22,
+        "nullable": "Y"
+      },
+      {
+        "column": "CARDCOMPATIBILITY2SHELFTYPE",
+        "type": "NUMBER",
+        "length": 22,
+        "nullable": "Y"
+      },
+      {
+        "column": "SLOTNUMBER",
+        "type": "NUMBER",
+        "length": 22,
+        "nullable": "Y"
+      },
+      {
+        "column": "CARDCOMPATIBILITY2NODEDEF",
+        "type": "NUMBER",
+        "length": 22,
+        "nullable": "Y"
+      },
+      {
+        "column": "CARDCOMPATIBILITY2CARDTYPE2",
+        "type": "NUMBER",
+        "length": 22,
+        "nullable": "Y"
+      },
+      {
+        "column": "SLOTPOSITION",
+        "type": "NUMBER",
+        "length": 22,
+        "nullable": "Y"
+      }
+    ],
+    "CARDINSLOT_O": [
+      {
+        "column": "CARDINSLOTID",
+        "type": "NUMBER",
+        "length": 22,
+        "nullable": "N"
+      },
+      {
+        "column": "CARDINSLOT2SLOT",
+        "type": "NUMBER",
+        "length": 22,
+        "nullable": "Y"
+      },
+      {
+        "column": "CARDINSLOT2CARD",
+        "type": "NUMBER",
+        "length": 22,
+        "nullable": "Y"
+      },
+      {
+        "column": "SLOTPOSITION",
+        "type": "NUMBER",
+        "length": 22,
+        "nullable": "N"
+      },
+      {
+        "column": "SLOTUNITS",
+        "type": "NUMBER",
+        "length": 22,
+        "nullable": "N"
+      },
+      {
+        "column": "FIRSTSLOT",
+        "type": "NUMBER",
+        "length": 22,
+        "nullable": "Y"
+      },
+      {
+        "column": "RPPLANID",
+        "type": "NUMBER",
+        "length": 22,
+        "nullable": "N"
+      }
+    ],
+    "CARDINSLOT_R": [
+      {
+        "column": "CARDINSLOTID",
+        "type": "NUMBER",
+        "length": 22,
+        "nullable": "N"
+      },
+      {
+        "column": "RPPLANID",
+        "type": "NUMBER",
+        "length": 22,
+        "nullable": "N"
+      },
+      {
+        "column": "CARDINSLOT2CARD",
+        "type": "NUMBER",
+        "length": 22,
+        "nullable": "Y"
+      },
+      {
+        "column": "CARDINSLOT2CARDPLAN",
+        "type": "NUMBER",
+        "length": 22,
+        "nullable": "Y"
+      },
+      {
+        "column": "CARDINSLOT2SLOT",
+        "type": "NUMBER",
+        "length": 22,
+        "nullable": "Y"
+      },
+      {
+        "column": "CARDINSLOT2SLOTPLAN",
+        "type": "NUMBER",
+        "length": 22,
+        "nullable": "Y"
+      },
+      {
+        "column": "DELETEFLAG",
+        "type": "NUMBER",
+        "length": 22,
+        "nullable": "N"
+      }
+    ],
+    "CARDTYPESLOTTYPE": [
+      {
+        "column": "CARDTYPESLOTTYPEID",
+        "type": "NUMBER",
+        "length": 22,
+        "nullable": "N"
+      },
+      {
+        "column": "CTST2CARDTYPE",
+        "type": "NUMBER",
+        "length": 22,
+        "nullable": "N"
+      },
+      {
+        "column": "SEQUENCE",
+        "type": "NUMBER",
+        "length": 22,
+        "nullable": "N"
+      },
+      {
+        "column": "CTST2SLOTTYPE",
+        "type": "NUMBER",
+        "length": 22,
+        "nullable": "N"
+      },
+      {
+        "column": "COUNT",
+        "type": "NUMBER",
+        "length": 22,
+        "nullable": "N"
+      }
+    ],
+    "CARDTYPE_M": [
+      {
+        "column": "CARDTYPEID",
+        "type": "NUMBER",
+        "length": 22,
+        "nullable": "N"
+      },
+      {
+        "column": "NAME",
+        "type": "VARCHAR2",
+        "length": 200,
+        "nullable": "N"
+      },
+      {
+        "column": "CARDTYPE2GRAPHICSBITMAP",
+        "type": "NUMBER",
+        "length": 22,
+        "nullable": "Y"
+      },
+      {
+        "column": "CARDTYPE2BROWSERBITMAP",
+        "type": "NUMBER",
+        "length": 22,
+        "nullable": "Y"
+      },
+      {
+        "column": "TABLENAME",
+        "type": "VARCHAR2",
+        "length": 200,
+        "nullable": "Y"
+      },
+      {
+        "column": "CLASS",
+        "type": "VARCHAR2",
+        "length": 200,
+        "nullable": "Y"
+      },
+      {
+        "column": "DESCRIPTION",
+        "type": "VARCHAR2",
+        "length": 4000,
+        "nullable": "Y"
+      },
+      {
+        "column": "PORTSTARTNUMBER",
+        "type": "NUMBER",
+        "length": 22,
+        "nullable": "Y"
+      },
+      {
+        "column": "SLOTSTARTNUMBER",
+        "type": "NUMBER",
+        "length": 22,
+        "nullable": "Y"
+      },
+      {
+        "column": "CARDSIZE",
+        "type": "NUMBER",
+        "length": 22,
+        "nullable": "Y"
+      },
+      {
+        "column": "CRITICALFLAG",
+        "type": "NUMBER",
+        "length": 22,
+        "nullable": "Y"
+      },
+      {
+        "column": "ISVISIBLE",
+        "type": "NUMBER",
+        "length": 22,
+        "nullable": "Y"
+      },
+      {
+        "column": "LABEL",
+        "type": "NUMBER",
+        "length": 22,
+        "nullable": "Y"
+      },
+      {
+        "column": "COOLINGSUPPLIED",
+        "type": "NUMBER",
+        "length": 22,
+        "nullable": "Y"
+      },
+      {
+        "column": "COOLINGUNITS",
+        "type": "NUMBER",
+        "length": 22,
+        "nullable": "Y"
+      },
+      {
+        "column": "COOLINGUSED",
+        "type": "NUMBER",
+        "length": 22,
+        "nullable": "Y"
+      },
+      {
+        "column": "POWERSUPPLIED",
+        "type": "NUMBER",
+        "length": 22,
+        "nullable": "Y"
+      },
+      {
+        "column": "POWERUNITS",
+        "type": "NUMBER",
+        "length": 22,
+        "nullable": "Y"
+      },
+      {
+        "column": "POWERUSED",
+        "type": "NUMBER",
+        "length": 22,
+        "nullable": "Y"
+      },
+      {
+        "column": "CARDTYPE2PRODUCTFAMILY",
+        "type": "NUMBER",
+        "length": 22,
+        "nullable": "Y"
+      },
+      {
+        "column": "DMPCLASS",
+        "type": "VARCHAR2",
+        "length": 200,
+        "nullable": "Y"
+      },
+      {
+        "column": "IGNORESYNC",
+        "type": "NUMBER",
+        "length": 22,
+        "nullable": "Y"
+      },
+      {
+        "column": "RM2VENDORCALLOUT",
+        "type": "VARCHAR2",
+        "length": 960,
+        "nullable": "Y"
+      },
+      {
+        "column": "VENDOR2RMCALLOUT",
+        "type": "VARCHAR2",
+        "length": 960,
+        "nullable": "Y"
+      }
+    ],
+    "CARD_EXT_O": [
+      {
+        "column": "CARDID",
+        "type": "NUMBER",
+        "length": 22,
+        "nullable": "N"
+      },
+      {
+        "column": "NET_IP_ADDRESS_REMOTE_WAN",
+        "type": "VARCHAR2",
+        "length": 400,
+        "nullable": "Y"
+      },
+      {
+        "column": "NET_IP_ADDRESS_GATEWAY",
+        "type": "VARCHAR2",
+        "length": 400,
+        "nullable": "Y"
+      },
+      {
+        "column": "GEN_SOFTWARE_RELEASE",
+        "type": "VARCHAR2",
+        "length": 400,
+        "nullable": "Y"
+      },
+      {
+        "column": "ISVISIBLE",
+        "type": "NUMBER",
+        "length": 22,
+        "nullable": "Y"
+      },
+      {
+        "column": "GEN_POWER_CONSUMPTION_WATTS",
+        "type": "NUMBER",
+        "length": 22,
+        "nullable": "Y"
+      },
+      {
+        "column": "NET_FQDN",
+        "type": "VARCHAR2",
+        "length": 400,
+        "nullable": "Y"
+      },
+      {
+        "column": "NET_LOOPBACK_MANAGEMENT",
+        "type": "VARCHAR2",
+        "length": 400,
+        "nullable": "Y"
+      },
+      {
+        "column": "GEN_RECOVERY_PRIORITY",
+        "type": "NUMBER",
+        "length": 22,
+        "nullable": "Y"
+      },
+      {
+        "column": "MGT_INBAND_MANAGEMENT",
+        "type": "NUMBER",
+        "length": 22,
+        "nullable": "Y"
+      },
+      {
+        "column": "GEN_ITEM_CODE",
+        "type": "VARCHAR2",
+        "length": 400,
+        "nullable": "Y"
+      },
+      {
+        "column": "NET_NET_MASK",
+        "type": "VARCHAR2",
+        "length": 400,
+        "nullable": "Y"
+      },
+      {
+        "column": "NET_MAC_ADDRESS",
+        "type": "VARCHAR2",
+        "length": 400,
+        "nullable": "Y"
+      },
+      {
+        "column": "LABEL",
+        "type": "NUMBER",
+        "length": 22,
+        "nullable": "Y"
+      },
+      {
+        "column": "GEN_HARDWARE_RELEASE",
+        "type": "VARCHAR2",
+        "length": 240,
+        "nullable": "Y"
+      },
+      {
+        "column": "GEN_SFP_CARD_INFO",
+        "type": "VARCHAR2",
+        "length": 400,
+        "nullable": "Y"
+      },
+      {
+        "column": "GEN_SERIAL_NUMBER",
+        "type": "VARCHAR2",
+        "length": 200,
+        "nullable": "Y"
+      },
+      {
+        "column": "DUE_DATE",
+        "type": "DATE",
+        "length": 7,
+        "nullable": "Y"
+      },
+      {
+        "column": "IN_SERVICE_DATE",
+        "type": "DATE",
+        "length": 7,
+        "nullable": "Y"
+      },
+      {
+        "column": "RPPLANID",
+        "type": "NUMBER",
+        "length": 22,
+        "nullable": "N"
+      },
+      {
+        "column": "GEN_OLD_CARD_NAME",
+        "type": "VARCHAR2",
+        "length": 200,
+        "nullable": "Y"
+      },
+      {
+        "column": "MGT_CARD_USAGE",
+        "type": "NUMBER",
+        "length": 22,
+        "nullable": "Y"
+      },
+      {
+        "column": "GEN_VENDOR_PART_NUMBER",
+        "type": "VARCHAR2",
+        "length": 200,
+        "nullable": "Y"
+      },
+      {
+        "column": "NET_IP_ADDRESS_WAN",
+        "type": "VARCHAR2",
+        "length": 1200,
+        "nullable": "Y"
+      },
+      {
+        "column": "DECOMMISSION_DATE",
+        "type": "DATE",
+        "length": 7,
+        "nullable": "Y"
+      },
+      {
+        "column": "GEN_KVH_CARD",
+        "type": "VARCHAR2",
+        "length": 80,
+        "nullable": "Y"
+      },
+      {
+        "column": "GEN_NC_CARD_ID",
+        "type": "NUMBER",
+        "length": 22,
+        "nullable": "Y"
+      },
+      {
+        "column": "NET_ANR_IP_ADDRESS",
+        "type": "VARCHAR2",
+        "length": 400,
+        "nullable": "Y"
+      },
+      {
+        "column": "MGT_NETWORK_ADDRESS",
+        "type": "VARCHAR2",
+        "length": 1000,
+        "nullable": "Y"
+      },
+      {
+        "column": "ORDERED_DATE",
+        "type": "DATE",
+        "length": 7,
+        "nullable": "Y"
+      },
+      {
+        "column": "GEN_SAFETY_WARNING",
+        "type": "NUMBER",
+        "length": 22,
+        "nullable": "Y"
+      },
+      {
+        "column": "GEN_SFP_DEVICE_INFO",
+        "type": "VARCHAR2",
+        "length": 2400,
+        "nullable": "Y"
+      },
+      {
+        "column": "GEN_MPN",
+        "type": "VARCHAR2",
+        "length": 400,
+        "nullable": "Y"
+      },
+      {
+        "column": "PRO_HISTRORICAL_CARD",
+        "type": "VARCHAR2",
+        "length": 4000,
+        "nullable": "Y"
+      },
+      {
+        "column": "PRO_CARD_OPERATIONAL_STATE",
+        "type": "NUMBER",
+        "length": 22,
+        "nullable": "Y"
+      },
+      {
+        "column": "LEGACYDATA",
+        "type": "CLOB",
+        "length": 4000,
+        "nullable": "Y"
+      },
+      {
+        "column": "GEN_NETWORK_CARD_DESC",
+        "type": "VARCHAR2",
+        "length": 400,
+        "nullable": "Y"
+      }
+    ],
+    "CARD_NAMING": [
+      {
+        "column": "NAMINGID",
+        "type": "NUMBER",
+        "length": 22,
+        "nullable": "Y"
+      },
+      {
+        "column": "CARDNAMING2CARDTYPE",
+        "type": "NUMBER",
+        "length": 22,
+        "nullable": "Y"
+      },
+      {
+        "column": "SEQUENCE",
+        "type": "VARCHAR2",
+        "length": 120,
+        "nullable": "Y"
+      },
+      {
+        "column": "CARDNAME",
+        "type": "VARCHAR2",
+        "length": 200,
+        "nullable": "Y"
+      },
+      {
+        "column": "SLOTNAME",
+        "type": "VARCHAR2",
+        "length": 4000,
+        "nullable": "Y"
+      },
+      {
+        "column": "PORTNAME",
+        "type": "VARCHAR2",
+        "length": 4000,
+        "nullable": "Y"
+      },
+      {
+        "column": "CARD_PORT_ROLE",
+        "type": "VARCHAR2",
+        "length": 4000,
+        "nullable": "Y"
+      },
+      {
+        "column": "PORT_DESCR",
+        "type": "VARCHAR2",
+        "length": 4000,
+        "nullable": "Y"
+      }
+    ],
+    "CARD_O": [
+      {
+        "column": "CARDID",
+        "type": "NUMBER",
+        "length": 22,
+        "nullable": "N"
+      },
+      {
+        "column": "NAME",
+        "type": "VARCHAR2",
+        "length": 200,
+        "nullable": "N"
+      },
+      {
+        "column": "FULLNAME",
+        "type": "VARCHAR2",
+        "length": 200,
+        "nullable": "Y"
+      },
+      {
+        "column": "RELATIVENAME",
+        "type": "VARCHAR2",
+        "length": 200,
+        "nullable": "Y"
+      },
+      {
+        "column": "ALIAS1",
+        "type": "VARCHAR2",
+        "length": 200,
+        "nullable": "Y"
+      },
+      {
+        "column": "ALIAS2",
+        "type": "VARCHAR2",
+        "length": 200,
+        "nullable": "Y"
+      },
+      {
+        "column": "OBJECTID",
+        "type": "VARCHAR2",
+        "length": 256,
+        "nullable": "Y"
+      },
+      {
+        "column": "SUBTYPE",
+        "type": "VARCHAR2",
+        "length": 200,
+        "nullable": "Y"
+      },
+      {
+        "column": "SUBSTATUS",
+        "type": "VARCHAR2",
+        "length": 200,
+        "nullable": "Y"
+      },
+      {
+        "column": "CARD2CARDTYPE",
+        "type": "NUMBER",
+        "length": 22,
+        "nullable": "N"
+      },
+      {
+        "column": "DESCRIPTION",
+        "type": "VARCHAR2",
+        "length": 4000,
+        "nullable": "Y"
+      },
+      {
+        "column": "NOTES",
+        "type": "VARCHAR2",
+        "length": 4000,
+        "nullable": "Y"
+      },
+      {
+        "column": "CREATEDDATE",
+        "type": "DATE",
+        "length": 7,
+        "nullable": "N"
+      },
+      {
+        "column": "LASTMODIFIEDDATE",
+        "type": "DATE",
+        "length": 7,
+        "nullable": "N"
+      },
+      {
+        "column": "CREATEDBY2DIMUSER",
+        "type": "NUMBER",
+        "length": 22,
+        "nullable": "N"
+      },
+      {
+        "column": "LASTMODIFIEDBY2DIMUSER",
+        "type": "NUMBER",
+        "length": 22,
+        "nullable": "N"
+      },
+      {
+        "column": "CARD2PROVISIONSTATUS",
+        "type": "NUMBER",
+        "length": 22,
+        "nullable": "N"
+      },
+      {
+        "column": "MARKEDFORDELETE",
+        "type": "NUMBER",
+        "length": 22,
+        "nullable": "Y"
+      },
+      {
+        "column": "INUSE",
+        "type": "NUMBER",
+        "length": 22,
+        "nullable": "N"
+      },
+      {
+        "column": "CARD2FUNCTIONALSTATUS",
+        "type": "NUMBER",
+        "length": 22,
+        "nullable": "Y"
+      },
+      {
+        "column": "CARD2NODE",
+        "type": "NUMBER",
+        "length": 22,
+        "nullable": "Y"
+      },
+      {
+        "column": "CARD2LOCATION",
+        "type": "NUMBER",
+        "length": 22,
+        "nullable": "Y"
+      },
+      {
+        "column": "PROTECTIONSTATUS",
+        "type": "NUMBER",
+        "length": 22,
+        "nullable": "Y"
+      },
+      {
+        "column": "CARD2PROTECTIONTYPE",
+        "type": "NUMBER",
+        "length": 22,
+        "nullable": "Y"
+      },
+      {
+        "column": "CARD2SHELFSLOT",
+        "type": "NUMBER",
+        "length": 22,
+        "nullable": "Y"
+      },
+      {
+        "column": "CARD2RPBUILDTEMPLATE",
+        "type": "NUMBER",
+        "length": 22,
+        "nullable": "Y"
+      },
+      {
+        "column": "ISVISIBLE",
+        "type": "NUMBER",
+        "length": 22,
+        "nullable": "Y"
+      },
+      {
+        "column": "LABEL",
+        "type": "NUMBER",
+        "length": 22,
+        "nullable": "Y"
+      },
+      {
+        "column": "RPPLANID",
+        "type": "NUMBER",
+        "length": 22,
+        "nullable": "N"
+      },
+      {
+        "column": "ISCOMPLETEINPLAN",
+        "type": "NUMBER",
+        "length": 22,
+        "nullable": "Y"
+      }
+    ],
+    "CARD_R": [
+      {
+        "column": "CARDID",
+        "type": "NUMBER",
+        "length": 22,
+        "nullable": "N"
+      },
+      {
+        "column": "RPPLANID",
+        "type": "NUMBER",
+        "length": 22,
+        "nullable": "N"
+      },
+      {
+        "column": "CARD2NODE",
+        "type": "NUMBER",
+        "length": 22,
+        "nullable": "Y"
+      },
+      {
+        "column": "CARD2NODEPLAN",
+        "type": "NUMBER",
+        "length": 22,
+        "nullable": "Y"
+      },
+      {
+        "column": "CARD2LOCATION",
+        "type": "NUMBER",
+        "length": 22,
+        "nullable": "Y"
+      },
+      {
+        "column": "CARD2LOCATIONPLAN",
+        "type": "NUMBER",
+        "length": 22,
+        "nullable": "Y"
+      },
+      {
+        "column": "CARD2SHELFSLOT",
+        "type": "NUMBER",
+        "length": 22,
+        "nullable": "Y"
+      },
+      {
+        "column": "CARD2SHELFSLOTPLAN",
+        "type": "NUMBER",
+        "length": 22,
+        "nullable": "Y"
+      },
+      {
+        "column": "DELETEFLAG",
+        "type": "NUMBER",
+        "length": 22,
+        "nullable": "N"
+      }
+    ],
+    "CIRCUITTYPEPORTTYPE": [
+      {
+        "column": "CIRCUITTYPEPORTTYPEID",
+        "type": "NUMBER",
+        "length": 22,
+        "nullable": "N"
+      },
+      {
+        "column": "CTPT2CIRCUITTYPE",
+        "type": "NUMBER",
+        "length": 22,
+        "nullable": "N"
+      },
+      {
+        "column": "CTPT2PORTTYPE",
+        "type": "NUMBER",
+        "length": 22,
+        "nullable": "N"
+      },
+      {
+        "column": "CIRCUITISPORTBEARER",
+        "type": "NUMBER",
+        "length": 22,
+        "nullable": "N"
+      }
+    ],
+    "CIRCUITTYPEPORTTYPE_BKP": [
+      {
+        "column": "CIRCUITTYPEPORTTYPEID",
+        "type": "NUMBER",
+        "length": 22,
+        "nullable": "N"
+      },
+      {
+        "column": "CTPT2CIRCUITTYPE",
+        "type": "NUMBER",
+        "length": 22,
+        "nullable": "N"
+      },
+      {
+        "column": "CTPT2PORTTYPE",
+        "type": "NUMBER",
+        "length": 22,
+        "nullable": "N"
+      },
+      {
+        "column": "CIRCUITISPORTBEARER",
+        "type": "NUMBER",
+        "length": 22,
+        "nullable": "N"
+      }
+    ],
+    "CONDUITLOCATION_O": [
+      {
+        "column": "CONDUITLOCATIONID",
+        "type": "NUMBER",
+        "length": 22,
+        "nullable": "N"
+      },
+      {
+        "column": "CNLC2CONDUIT",
+        "type": "NUMBER",
+        "length": 22,
+        "nullable": "Y"
+      },
+      {
+        "column": "CNLC2LOCATION",
+        "type": "NUMBER",
+        "length": 22,
+        "nullable": "Y"
+      },
+      {
+        "column": "SEQUENCE",
+        "type": "NUMBER",
+        "length": 22,
+        "nullable": "N"
+      },
+      {
+        "column": "SECTIONLENGTH",
+        "type": "NUMBER",
+        "length": 22,
+        "nullable": "Y"
+      },
+      {
+        "column": "ISVISIBLE",
+        "type": "NUMBER",
+        "length": 22,
+        "nullable": "Y"
+      },
+      {
+        "column": "LABEL",
+        "type": "NUMBER",
+        "length": 22,
+        "nullable": "Y"
+      },
+      {
+        "column": "RPPLANID",
+        "type": "NUMBER",
+        "length": 22,
+        "nullable": "N"
+      }
+    ],
+    "CONDUITLOCATION_R": [
+      {
+        "column": "CONDUITLOCATIONID",
+        "type": "NUMBER",
+        "length": 22,
+        "nullable": "N"
+      },
+      {
+        "column": "RPPLANID",
+        "type": "NUMBER",
+        "length": 22,
+        "nullable": "N"
+      },
+      {
+        "column": "CNLC2CONDUIT",
+        "type": "NUMBER",
+        "length": 22,
+        "nullable": "N"
+      },
+      {
+        "column": "CNLC2CONDUITPLAN",
+        "type": "NUMBER",
+        "length": 22,
+        "nullable": "Y"
+      },
+      {
+        "column": "CNLC2LOCATION",
+        "type": "NUMBER",
+        "length": 22,
+        "nullable": "N"
+      },
+      {
+        "column": "CNLC2LOCATIONPLAN",
+        "type": "NUMBER",
+        "length": 22,
+        "nullable": "Y"
+      },
+      {
+        "column": "DELETEFLAG",
+        "type": "NUMBER",
+        "length": 22,
+        "nullable": "N"
+      }
+    ],
+    "CONTAINERDEF": [
+      {
+        "column": "CONTAINERDEFID",
+        "type": "NUMBER",
+        "length": 22,
+        "nullable": "N"
+      },
+      {
+        "column": "CD2CONTAINERNODETYPE",
+        "type": "NUMBER",
+        "length": 22,
+        "nullable": "N"
+      },
+      {
+        "column": "CD2CONTAINEDNODETYPE",
+        "type": "NUMBER",
+        "length": 22,
+        "nullable": "N"
+      }
+    ],
+    "CONTROLTEMPLATEINSTANCENODE": [
+      {
+        "column": "CTIN2CONTROLTEMPLATEINSTANCE",
+        "type": "NUMBER",
+        "length": 22,
+        "nullable": "N"
+      },
+      {
+        "column": "CTIN2NODE",
+        "type": "NUMBER",
+        "length": 22,
+        "nullable": "N"
+      },
+      {
+        "column": "CTIN2AGENT",
+        "type": "NUMBER",
+        "length": 22,
+        "nullable": "N"
+      },
+      {
+        "column": "RPPLANID",
+        "type": "NUMBER",
+        "length": 22,
+        "nullable": "N"
+      }
+    ],
+    "CROSSCONNECTIONTYPEPORTTYPE": [
+      {
+        "column": "CROSSCONNECTIONTYPEPORTTYPEID",
+        "type": "NUMBER",
+        "length": 22,
+        "nullable": "N"
+      },
+      {
+        "column": "CCTPT2CROSSCONNECTIONTYPE",
+        "type": "NUMBER",
+        "length": 22,
+        "nullable": "N"
+      },
+      {
+        "column": "CCTPT2PORTTYPE",
+        "type": "NUMBER",
+        "length": 22,
+        "nullable": "N"
+      }
+    ],
+    "CUST_DELETE_AGGPORT": [
+      {
+        "column": "ID",
+        "type": "NUMBER",
+        "length": 22,
+        "nullable": "N"
+      },
+      {
+        "column": "AGGREGATE_NAME",
+        "type": "VARCHAR2",
+        "length": 200,
+        "nullable": "Y"
+      },
+      {
+        "column": "AGGREGATEPORTID",
+        "type": "NUMBER",
+        "length": 22,
+        "nullable": "Y"
+      },
+      {
+        "column": "MEMBER_PORTNAME",
+        "type": "VARCHAR2",
+        "length": 200,
+        "nullable": "Y"
+      },
+      {
+        "column": "MEMBERPORTID",
+        "type": "NUMBER",
+        "length": 22,
+        "nullable": "Y"
+      },
+      {
+        "column": "DEVICE_NAME",
+        "type": "VARCHAR2",
+        "length": 200,
+        "nullable": "Y"
+      },
+      {
+        "column": "STATUS",
+        "type": "VARCHAR2",
+        "length": 200,
+        "nullable": "Y"
+      },
+      {
+        "column": "TIMESTAMP",
+        "type": "DATE",
+        "length": 7,
+        "nullable": "Y"
+      },
+      {
+        "column": "REMARK",
+        "type": "VARCHAR2",
+        "length": 2000,
+        "nullable": "Y"
+      }
+    ],
+    "CUST_DEVICE_DECOM_STATUS": [
+      {
+        "column": "NAME",
+        "type": "VARCHAR2",
+        "length": 200,
+        "nullable": "Y"
+      },
+      {
+        "column": "NODEID",
+        "type": "NUMBER",
+        "length": 22,
+        "nullable": "Y"
+      },
+      {
+        "column": "STATUS",
+        "type": "VARCHAR2",
+        "length": 50,
+        "nullable": "Y"
+      },
+      {
+        "column": "ERROR",
+        "type": "VARCHAR2",
+        "length": 200,
+        "nullable": "Y"
+      }
+    ],
+    "DEVICEGROUP": [
+      {
+        "column": "DEVICEGROUPID",
+        "type": "NUMBER",
+        "length": 22,
+        "nullable": "N"
+      },
+      {
+        "column": "NAME",
+        "type": "VARCHAR2",
+        "length": 200,
+        "nullable": "N"
+      },
+      {
+        "column": "DEVICEGROUP2DEVICEGROUPTYPE",
+        "type": "NUMBER",
+        "length": 22,
+        "nullable": "N"
+      },
+      {
+        "column": "EMSREDUNDANCYPOLICY",
+        "type": "NUMBER",
+        "length": 22,
+        "nullable": "Y"
+      },
+      {
+        "column": "CREATEDBY2DIMUSER",
+        "type": "VARCHAR2",
+        "length": 200,
+        "nullable": "N"
+      },
+      {
+        "column": "CREATEDDATE",
+        "type": "DATE",
+        "length": 7,
+        "nullable": "N"
+      },
+      {
+        "column": "LASTMODIFIEDBY2DIMUSER",
+        "type": "VARCHAR2",
+        "length": 200,
+        "nullable": "N"
+      },
+      {
+        "column": "LASTMODIFIEDDATE",
+        "type": "DATE",
+        "length": 7,
+        "nullable": "N"
+      },
+      {
+        "column": "DEVICEGROUP2AGENTPROFILE",
+        "type": "NUMBER",
+        "length": 22,
+        "nullable": "N"
+      },
+      {
+        "column": "DEVICEGROUP2PROVISIONSTATUS",
+        "type": "NUMBER",
+        "length": 22,
+        "nullable": "N"
+      },
+      {
+        "column": "DEVICEGROUP2FUNCTIONALSTATUS",
+        "type": "NUMBER",
+        "length": 22,
+        "nullable": "Y"
+      },
+      {
+        "column": "MARKEDFORDELETE",
+        "type": "NUMBER",
+        "length": 22,
+        "nullable": "Y"
+      },
+      {
+        "column": "FULLNAME",
+        "type": "VARCHAR2",
+        "length": 200,
+        "nullable": "Y"
+      },
+      {
+        "column": "RELATIVENAME",
+        "type": "VARCHAR2",
+        "length": 200,
+        "nullable": "Y"
+      },
+      {
+        "column": "ALIAS1",
+        "type": "VARCHAR2",
+        "length": 200,
+        "nullable": "Y"
+      },
+      {
+        "column": "ALIAS2",
+        "type": "VARCHAR2",
+        "length": 200,
+        "nullable": "Y"
+      },
+      {
+        "column": "OBJECTID",
+        "type": "VARCHAR2",
+        "length": 256,
+        "nullable": "Y"
+      },
+      {
+        "column": "SUBTYPE",
+        "type": "VARCHAR2",
+        "length": 200,
+        "nullable": "Y"
+      },
+      {
+        "column": "SUBSTATUS",
+        "type": "VARCHAR2",
+        "length": 200,
+        "nullable": "Y"
+      },
+      {
+        "column": "DESCRIPTION",
+        "type": "VARCHAR2",
+        "length": 4000,
+        "nullable": "Y"
+      },
+      {
+        "column": "NOTES",
+        "type": "VARCHAR2",
+        "length": 4000,
+        "nullable": "Y"
+      },
+      {
+        "column": "ISVISIBLE",
+        "type": "NUMBER",
+        "length": 22,
+        "nullable": "Y"
+      },
+      {
+        "column": "LABEL",
+        "type": "NUMBER",
+        "length": 22,
+        "nullable": "Y"
+      }
+    ],
+    "DEVICEGROUPTYPE_M": [
+      {
+        "column": "DEVICEGROUPTYPEID",
+        "type": "NUMBER",
+        "length": 22,
+        "nullable": "N"
+      },
+      {
+        "column": "NAME",
+        "type": "VARCHAR2",
+        "length": 200,
+        "nullable": "N"
+      },
+      {
+        "column": "DEVICEGROUPTYPE2DIMOBJECT",
+        "type": "NUMBER",
+        "length": 22,
+        "nullable": "N"
+      },
+      {
+        "column": "DEVICEGROUPTYPE2BROWSERBITMAP",
+        "type": "NUMBER",
+        "length": 22,
+        "nullable": "N"
+      },
+      {
+        "column": "DEVICEGROUPTYPE2GRAPHICSBITMAP",
+        "type": "NUMBER",
+        "length": 22,
+        "nullable": "N"
+      },
+      {
+        "column": "TABLENAME",
+        "type": "VARCHAR2",
+        "length": 200,
+        "nullable": "Y"
+      },
+      {
+        "column": "CLASS",
+        "type": "VARCHAR2",
+        "length": 200,
+        "nullable": "Y"
+      },
+      {
+        "column": "DESCRIPTION",
+        "type": "VARCHAR2",
+        "length": 4000,
+        "nullable": "Y"
+      },
+      {
+        "column": "ISVISIBLE",
+        "type": "NUMBER",
+        "length": 22,
+        "nullable": "Y"
+      },
+      {
+        "column": "LABEL",
+        "type": "NUMBER",
+        "length": 22,
+        "nullable": "Y"
+      }
+    ],
+    "DEVICE_DIMENSION_UPDATE": [
+      {
+        "column": "NIRS2NODE",
+        "type": "NUMBER",
+        "length": 22,
+        "nullable": "Y"
+      },
+      {
+        "column": "PARENT_EQ_INST_ID",
+        "type": "NUMBER",
+        "length": 22,
+        "nullable": "Y"
+      },
+      {
+        "column": "DIM_DIST_TO_BASE",
+        "type": "NUMBER",
+        "length": 22,
+        "nullable": "Y"
+      },
+      {
+        "column": "DIM_DIST_TO_FRONT",
+        "type": "NUMBER",
+        "length": 22,
+        "nullable": "Y"
+      },
+      {
+        "column": "DIM_DIST_TO_LEFT",
+        "type": "NUMBER",
+        "length": 22,
+        "nullable": "Y"
+      }
+    ],
+    "DEVICE_RACK": [
+      {
+        "column": "INST_ID",
+        "type": "VARCHAR2",
+        "length": 10,
+        "nullable": "Y"
+      }
+    ],
+    "DUP_LOGICAL_PORTS": [
+      {
+        "column": "NODEID",
+        "type": "NUMBER",
+        "length": 22,
+        "nullable": "Y"
+      },
+      {
+        "column": "NODE_NAME",
+        "type": "VARCHAR2",
+        "length": 200,
+        "nullable": "Y"
+      },
+      {
+        "column": "PORT1ID",
+        "type": "NUMBER",
+        "length": 22,
+        "nullable": "Y"
+      },
+      {
+        "column": "PORT1NAME",
+        "type": "VARCHAR2",
+        "length": 200,
+        "nullable": "Y"
+      },
+      {
+        "column": "NUM_CIRCS1",
+        "type": "NUMBER",
+        "length": 22,
+        "nullable": "Y"
+      },
+      {
+        "column": "NUM_CHILD_PORTS1",
+        "type": "NUMBER",
+        "length": 22,
+        "nullable": "Y"
+      },
+      {
+        "column": "NUM_PLANS1",
+        "type": "NUMBER",
+        "length": 22,
+        "nullable": "Y"
+      },
+      {
+        "column": "PORT2ID",
+        "type": "NUMBER",
+        "length": 22,
+        "nullable": "Y"
+      },
+      {
+        "column": "PORT2NAME",
+        "type": "VARCHAR2",
+        "length": 200,
+        "nullable": "Y"
+      },
+      {
+        "column": "NUM_CIRCS2",
+        "type": "NUMBER",
+        "length": 22,
+        "nullable": "Y"
+      },
+      {
+        "column": "NUM_CHILD_PORTS2",
+        "type": "NUMBER",
+        "length": 22,
+        "nullable": "Y"
+      },
+      {
+        "column": "NUM_PLANS2",
+        "type": "NUMBER",
+        "length": 22,
+        "nullable": "Y"
+      }
+    ]
+  },
+  "stored_objects": [
+    {
+      "name": "ENCRYPT_MD5",
+      "type": "FUNCTION",
+      "status": "VALID"
+    },
+    {
+      "name": "GETAPISECURETOKEN",
+      "type": "FUNCTION",
+      "status": "VALID"
+    },
+    {
+      "name": "GETASSIGNEDTIMESLOTS",
+      "type": "FUNCTION",
+      "status": "VALID"
+    },
+    {
+      "name": "GETATTRVALUE",
+      "type": "FUNCTION",
+      "status": "VALID"
+    },
+    {
+      "name": "GETBANDWIDTHNAME",
+      "type": "FUNCTION",
+      "status": "VALID"
+    },
+    {
+      "name": "GETCABLECATEGORY",
+      "type": "FUNCTION",
+      "status": "VALID"
+    },
+    {
+      "name": "GETCABLEPLANNEDVERSION",
+      "type": "FUNCTION",
+      "status": "VALID"
+    },
+    {
+      "name": "GETCARDINSLOTGLOBAL",
+      "type": "FUNCTION",
+      "status": "VALID"
+    },
+    {
+      "name": "GETCARDPLANNEDVERSION",
+      "type": "FUNCTION",
+      "status": "VALID"
+    },
+    {
+      "name": "GETCARDTYPE",
+      "type": "FUNCTION",
+      "status": "VALID"
+    },
+    {
+      "name": "GETCIRCUITBANDWIDTH",
+      "type": "FUNCTION",
+      "status": "VALID"
+    },
+    {
+      "name": "GETCIRCUITCARDNAMEA",
+      "type": "FUNCTION",
+      "status": "VALID"
+    },
+    {
+      "name": "GETCIRCUITCARDNAMEB",
+      "type": "FUNCTION",
+      "status": "VALID"
+    },
+    {
+      "name": "GETCIRCUITNAMEBYPORTID",
+      "type": "FUNCTION",
+      "status": "VALID"
+    },
+    {
+      "name": "GETCIRCUITPATHLINK",
+      "type": "FUNCTION",
+      "status": "VALID"
+    },
+    {
+      "name": "GETCIRCUITPLANNEDVERSION",
+      "type": "FUNCTION",
+      "status": "VALID"
+    },
+    {
+      "name": "GETCIRCUITSLOTNAMEA",
+      "type": "FUNCTION",
+      "status": "VALID"
+    },
+    {
+      "name": "GETCIRCUITSLOTNAMEB",
+      "type": "FUNCTION",
+      "status": "VALID"
+    },
+    {
+      "name": "GETCIRCUITSLOTNUMBERA",
+      "type": "FUNCTION",
+      "status": "VALID"
+    },
+    {
+      "name": "GETCIRCUITSLOTNUMBERB",
+      "type": "FUNCTION",
+      "status": "VALID"
+    },
+    {
+      "name": "GETCIRCUITSUBSLOTNAMEA",
+      "type": "FUNCTION",
+      "status": "VALID"
+    },
+    {
+      "name": "GETCIRCUITSUBSLOTNAMEB",
+      "type": "FUNCTION",
+      "status": "VALID"
+    },
+    {
+      "name": "GETCIRCUITSUBTYPE",
+      "type": "FUNCTION",
+      "status": "VALID"
+    },
+    {
+      "name": "GETCIRCUITTOASIDECUSTOMER",
+      "type": "FUNCTION",
+      "status": "VALID"
+    },
+    {
+      "name": "GETCIRCUITTOCUSTOMER",
+      "type": "FUNCTION",
+      "status": "VALID"
+    },
+    {
+      "name": "GETCIRCUITTOVLAN",
+      "type": "FUNCTION",
+      "status": "VALID"
+    },
+    {
+      "name": "GETCIRCUITTOZSIDECUSTOMER",
+      "type": "FUNCTION",
+      "status": "VALID"
+    },
+    {
+      "name": "GETCONDUCTORLINKNAME",
+      "type": "FUNCTION",
+      "status": "VALID"
+    },
+    {
+      "name": "GETCURRENTCONTEXTFILTER",
+      "type": "FUNCTION",
+      "status": "VALID"
+    },
+    {
+      "name": "GETCURRENTCONTEXTFILTER_NVL",
+      "type": "FUNCTION",
+      "status": "VALID"
+    },
+    {
+      "name": "GETCUSTOMERNAME",
+      "type": "FUNCTION",
+      "status": "VALID"
+    },
+    {
+      "name": "GETDESIGNCMMTSFOLLOWEDBYCLASS",
+      "type": "FUNCTION",
+      "status": "VALID"
+    },
+    {
+      "name": "GETDESIGNCMMTSPRECEDEDBYCLASS",
+      "type": "FUNCTION",
+      "status": "VALID"
+    },
+    {
+      "name": "GETDESIGNCMMTSRELATEDTOCLASS",
+      "type": "FUNCTION",
+      "status": "VALID"
+    },
+    {
+      "name": "GETDESIGNCOMMENTSFOLLOWEDBY",
+      "type": "FUNCTION",
+      "status": "VALID"
+    },
+    {
+      "name": "GETDESIGNCOMMENTSPRECEDEDBY",
+      "type": "FUNCTION",
+      "status": "VALID"
+    },
+    {
+      "name": "GETDESIGNCOMMENTSRELATEDTO",
+      "type": "FUNCTION",
+      "status": "VALID"
+    },
+    {
+      "name": "GETDEVICEPLANNEDVERSION",
+      "type": "FUNCTION",
+      "status": "VALID"
+    },
+    {
+      "name": "GETENDPHYSICALPORTS",
+      "type": "FUNCTION",
+      "status": "VALID"
+    },
+    {
+      "name": "GETFREECONDUCTORS",
+      "type": "FUNCTION",
+      "status": "VALID"
+    },
+    {
+      "name": "GETFREETIMESLOTS",
+      "type": "FUNCTION",
+      "status": "VALID"
+    },
+    {
+      "name": "GETGLOBALASSIGNEDBANDWIDTH",
+      "type": "FUNCTION",
+      "status": "VALID"
+    },
+    {
+      "name": "GETGLOBALASSIGNEDBWTOPOLOGY",
+      "type": "FUNCTION",
+      "status": "VALID"
+    },
+    {
+      "name": "GETGLOBALASSIGNEDTIMESLOTS",
+      "type": "FUNCTION",
+      "status": "VALID"
+    },
+    {
+      "name": "GETGLOBALAVAILABLEBANDWIDTH",
+      "type": "FUNCTION",
+      "status": "VALID"
+    },
+    {
+      "name": "GETGLOBALAVAILABLEBWTOPOLOGY",
+      "type": "FUNCTION",
+      "status": "VALID"
+    },
+    {
+      "name": "GETGLOBALFREETIMESLOTS",
+      "type": "FUNCTION",
+      "status": "VALID"
+    },
+    {
+      "name": "GETISPORTPHYSICAL",
+      "type": "FUNCTION",
+      "status": "VALID"
+    },
+    {
+      "name": "GETKVHBUILDINGID",
+      "type": "FUNCTION",
+      "status": "VALID"
+    },
+    {
+      "name": "GETLINKCARDNAMEA",
+      "type": "FUNCTION",
+      "status": "VALID"
+    },
+    {
+      "name": "GETLINKCARDNAMEB",
+      "type": "FUNCTION",
+      "status": "VALID"
+    },
+    {
+      "name": "GETLINKPLANNEDVERSION",
+      "type": "FUNCTION",
+      "status": "VALID"
+    },
+    {
+      "name": "GETLINKSLOTNAMEA",
+      "type": "FUNCTION",
+      "status": "VALID"
+    },
+    {
+      "name": "GETLINKSLOTNAMEB",
+      "type": "FUNCTION",
+      "status": "VALID"
+    },
+    {
+      "name": "GETLINKSLOTNUMBERA",
+      "type": "FUNCTION",
+      "status": "VALID"
+    },
+    {
+      "name": "GETLINKSLOTNUMBERB",
+      "type": "FUNCTION",
+      "status": "VALID"
+    },
+    {
+      "name": "GETLINKSUBSLOTNAMEA",
+      "type": "FUNCTION",
+      "status": "VALID"
+    },
+    {
+      "name": "GETLINKSUBSLOTNAMEB",
+      "type": "FUNCTION",
+      "status": "VALID"
+    },
+    {
+      "name": "GETNCLINKIDHYPERLINK",
+      "type": "FUNCTION",
+      "status": "VALID"
+    },
+    {
+      "name": "GETOVERLYINGCIRCUITNAME",
+      "type": "FUNCTION",
+      "status": "VALID"
+    },
+    {
+      "name": "GETOVERLYINGCIRCUITSONCIRCUIT",
+      "type": "FUNCTION",
+      "status": "VALID"
+    },
+    {
+      "name": "GETOVERLYINGCIRCUITSONTOPOLOGY",
+      "type": "FUNCTION",
+      "status": "VALID"
+    },
+    {
+      "name": "GETPARENTCARDNAME",
+      "type": "FUNCTION",
+      "status": "VALID"
+    },
+    {
+      "name": "GETPLANNINGPOLICYFUNCTION",
+      "type": "FUNCTION",
+      "status": "VALID"
+    },
+    {
+      "name": "GETPORTAVAILABILITY",
+      "type": "FUNCTION",
+      "status": "VALID"
+    },
+    {
+      "name": "GETPORTAVAILABILITYFORLINK",
+      "type": "FUNCTION",
+      "status": "VALID"
+    },
+    {
+      "name": "GETPORTINTERFACEAFORLAGCIRCUIT",
+      "type": "FUNCTION",
+      "status": "VALID"
+    },
+    {
+      "name": "GETPORTINTERFACEZFORLAGCIRCUIT",
+      "type": "FUNCTION",
+      "status": "VALID"
+    },
+    {
+      "name": "GETPORTPLANNEDVERSION",
+      "type": "FUNCTION",
+      "status": "VALID"
+    },
+    {
+      "name": "GETPORTSLOTNAME",
+      "type": "FUNCTION",
+      "status": "VALID"
+    },
+    {
+      "name": "GETPROVIDERCIRCUIT",
+      "type": "FUNCTION",
+      "status": "VALID"
+    },
+    {
+      "name": "GETSDSITEDATA",
+      "type": "FUNCTION",
+      "status": "VALID"
+    },
+    {
+      "name": "GETSERVICEPLANNEDVERSION",
+      "type": "FUNCTION",
+      "status": "VALID"
+    },
+    {
+      "name": "GETSLOTCARDDECOMDATEOPS",
+      "type": "FUNCTION",
+      "status": "VALID"
+    },
+    {
+      "name": "GETSLOTCARDPROVISIONSTATUSOPS",
+      "type": "FUNCTION",
+      "status": "VALID"
+    },
+    {
+      "name": "GETSTARTPHYSICALPORTS",
+      "type": "FUNCTION",
+      "status": "VALID"
+    },
+    {
+      "name": "GETTASKENGINEUSERID",
+      "type": "FUNCTION",
+      "status": "VALID"
+    },
+    {
+      "name": "GETTASKENGINEUSERIDWITHDBNAME",
+      "type": "FUNCTION",
+      "status": "VALID"
+    },
+    {
+      "name": "GETTIMESLOTS",
+      "type": "FUNCTION",
+      "status": "VALID"
+    },
+    {
+      "name": "GETTOPOLOGYPLANNEDVERSION",
+      "type": "FUNCTION",
+      "status": "VALID"
+    },
+    {
+      "name": "GETTOTAL_POWER_CONSUMPTION_AC",
+      "type": "FUNCTION",
+      "status": "VALID"
+    },
+    {
+      "name": "GETTOTAL_POWER_CONSUMPTION_DC",
+      "type": "FUNCTION",
+      "status": "VALID"
+    },
+    {
+      "name": "GETUNDERLYINGCIRCUITSONCIRCUIT",
+      "type": "FUNCTION",
+      "status": "VALID"
+    },
+    {
+      "name": "GETUPOSINRACK",
+      "type": "FUNCTION",
+      "status": "VALID"
+    },
+    {
+      "name": "GETUSERID",
+      "type": "FUNCTION",
+      "status": "VALID"
+    },
+    {
+      "name": "GETVLANRELATEDPORTS",
+      "type": "FUNCTION",
+      "status": "VALID"
+    },
+    {
+      "name": "GETXPOSINRACK",
+      "type": "FUNCTION",
+      "status": "VALID"
+    },
+    {
+      "name": "GETYPOSINRACK",
+      "type": "FUNCTION",
+      "status": "VALID"
+    },
+    {
+      "name": "GNM_APPEND_ERROR",
+      "type": "FUNCTION",
+      "status": "VALID"
+    },
+    {
+      "name": "GNM_XML_ESCAPE",
+      "type": "FUNCTION",
+      "status": "VALID"
+    },
+    {
+      "name": "INSERT_CARD_COMPATIBILITY_FN",
+      "type": "FUNCTION",
+      "status": "VALID"
+    },
+    {
+      "name": "NEXT_SITEMOVE",
+      "type": "FUNCTION",
+      "status": "VALID"
+    },
+    {
+      "name": "RES_GETCURRENTCONTEXTFILTER",
+      "type": "FUNCTION",
+      "status": "VALID"
+    },
+    {
+      "name": "SETMEMORYSIZE",
+      "type": "FUNCTION",
+      "status": "VALID"
+    },
+    {
+      "name": "VALIDATEDUPLICATENUMBERONCIRCUIT",
+      "type": "FUNCTION",
+      "status": "VALID"
+    },
+    {
+      "name": "VALIDATENUMBERNAME",
+      "type": "FUNCTION",
+      "status": "VALID"
+    },
+    {
+      "name": "VALIDATENUMBERPRESENTONCIRCUIT",
+      "type": "FUNCTION",
+      "status": "VALID"
+    },
+    {
+      "name": "VALIDATENUMBERPRESENTONSERVICE",
+      "type": "FUNCTION",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGACTIONVIASWO_C6",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGACTIONVIASWO_C6_TCW",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGACTIVITYCOMSUPPORT_BE",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGACTIVITYCOMSUPPORT_LOCATION",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGADDSHELF",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGADDSHELF_CALLBACKS",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGADDSHELF_PRIVATE",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGADDSHELF_PRIVATE_TCW",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGADDSHELF_WIZINFO",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGADDSHELF_WIZINFO_TCW",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGADDSHELF_WO",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGAGENT",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGAGENTPROFILE",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGAGENTPROFILEPERSISTER",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGAGENTPROFILESTATE",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGALPHANUM",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGANNFBR_CARD",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGANNFBR_DEVICE",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGANNFBR_LINK",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGANNFBR_LOCATION",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGANNFBR_NUMBER",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGANNFBR_PORT",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGANNFBR_PROJECT",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGANNFBR_RPPLAN",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGANNFBR_TOPOLOGY",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGANNFDA_CAPACITY",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGANNFDA_COMPLETEINPLAN",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGANNFDA_CONDUIT",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGANNFDA_DEFAULTSTATUS",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGANNFDA_DEVICE",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGANNFDA_FREEPORT",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGANNFDA_IMPLEMENTATION",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGANNFDA_MASTERED",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGANNFDA_PROTECTION",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGANNFDA_RESERVATION",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGANNFDA_RESOLUTION",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGANNFDA_ROUTE",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGANNFDA_SITEPLANNER",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGANNFDA_SYNCDIFF",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGAPICORE",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGAPICORE_TCW",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGAPIVALIDATE",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGAPIVALIDATE_TCW",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGAPPLICATION",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGAPPLICATIONHELPER",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGAPPLICATIONPERSISTER",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGAPPLICATIONREAD",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGAPPLICATIONSTATE",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGAPPLICATIONXML",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGAPPLICATION_PRIVATE",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGAPPLICATION_TCW",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGAPPLICATION_WIZINFO",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGARCHIVEWIZARD",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGARCHIVEWIZARD_PRIVATE",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGARCHIVEWIZARD_WIZINFO",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGASSET",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGASSETACTIVITY",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGASSETCALLOUTS",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGASSET_TCW",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGASSOCIATEDOBJECTS",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGATTRIBUTEUPDATE",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGAUTOCROSSCONN_CALLBACKS",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGAUTOCROSSCONN_PRIVATE",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGAUTOCROSSCONN_PRIVATE_TCW",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGAUTOCROSSCONN_PUBLIC",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGAUTOCROSSCONN_WIZINFO",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGAUTOCROSSCONN_WIZINFO_TCW",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGAUTOCROSSCONN_WORKORDER",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGAUTOMATEDLINKS_PRIVATE",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGAUTOMATEDLINKS_READAPI",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGAUTOMATEDLINKS_WIZINFO",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGBACKGROUNDJOB",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGBANDWIDTHCAPACITY",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGBIOME",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGBITMAPUTILITIES",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGBTMIGRATIONTOOLCALLOUTS",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGBUILDROLLOUT_PRIVATE",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGBUILDROLLOUT_WIZINFO",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGBUILDROLLOUT_WIZREAD",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGBUILDTEMPLATE",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGBUILDTEMPLATECALLBACKS",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGBUILDTEMPLATEPERSISTER",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGBUILDTEMPLATEREAD",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGBUILDTEMPLATEROLLOUT",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGBUILDTEMPLATEROLLOUT_TCW",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGBUILDTEMPLATESTATE",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGBUILDTEMPLATEXML",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGBUILDTEMPLATE_PRIVATE",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGBUILDTEMPLATE_WIZINFO",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGBUILDTEMPLATE_WIZREAD",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGBULKASSETATTR_CALLBACKS",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGBULKASSETATTR_PRIVATE",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGBULKASSETATTR_WIZINFO",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGBULKASSETATTR_WIZINFO_TCW",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGBULKASSETATTR_WO",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGBULKATTRIBUTES",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGBULKATTRIBUTES_CALLBACKS",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGBULKATTRIBUTES_PRIVATE",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGBULKATTRIBUTES_WIZINFO",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGBULKATTRIBUTES_WIZINFO_TCW",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGBULKATTRIBUTES_WO",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGBULKATTRIBUTE_XML",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGBULKDELETEUTILS",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGBULKPARAMETER",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGBULKPARAMETERCONTEXTAPI",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGBULKPARAMETERPERSISTER",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGBULKPARAMETERREAD",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGBULKPARAMETERSET_PRIVATE",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGBULKPARAMETERSET_READ",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGBULKPARAMETERSET_WIZINFO",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGBULKPARAMETERSTATE",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGBULKPARAMETERUTILS",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGBULKPARAMETERXML",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGBULKPARAMETER_TCW",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGBULKRESERVATIONWIZARD_READ",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGBUSINESSENTITY",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGBUSINESSENTITYCALLOUTS",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGBUSINESSENTITYPERSISTER",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGBUSINESSENTITYREAD",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGBUSINESSENTITYSTATE",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGBUSINESSENTITY_PRIVATE",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGBUSINESSENTITY_WIZINFO",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGCABLE",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGCABLECALLOUTS",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGCABLEOPERATIONS",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGCABLEPERSISTER",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGCABLEREAD",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGCABLESTATE",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGCABLETEMPLATE_BITSET",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGCABLETEMPLATE_CALLOUTS",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGCABLETEMPLATE_PRIVATE",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGCABLETEMPLATE_READAPI",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGCABLETEMPLATE_TREE",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGCABLETEMPLATE_WIZINFO",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGCABLETERMINATION_PRIVATE",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGCABLETERMINATION_READAPI",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGCABLETERMINATION_WIZINFO",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGCABLEXML",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGCABLE_PRIVATE",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGCABLE_READ",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGCABLE_TCW",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGCABLE_WIZINFO",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGCAMALGORITHM1",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGCAMALGORITHM1_CALLBACKS",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGCAMALGORITHMINTERFACE",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGCAMALGORITHMLRE",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGCAMALGORITHMLRE_CALLBACKS",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGCAMDIMENSIONCONSTANTS",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGCAMPRUNINGRULES",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGCAMREGIONSPRUNINGRULE",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGCAMRULEATTRIBUTEINTERFACE",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGCAMRULECONTIGUOUSTIMESLOTS",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGCAMRULEDATAMAPPING",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGCAMRULEDELETEDUPCCTROUTES",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGCAMRULEDELETEDUPNODEROUTES",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGCAMRULEDELETEDUPTOPROUTES",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGCAMRULEDUPTOPOLOGY",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGCAMRULEINTERFACE",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGCAMRULELOGTOPPROGRESS",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGCAMRULELRELONGSOLUTION",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGCAMRULEMINIMUMHOP",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGCAMRULEPATHSANDPATHPORTS",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGCAMRULEPHYSDIVERSITY",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGCAMRULEPORTSAVAILABLEFORAG",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGCAMRULESETDYNAMICCONSTRNTS",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGCAMRULETSLOTSFORBOTHCCTS",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGCAMRULEUNIQUECIRCUIT",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGCAMRULEVALIDPATHPORTS",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGCAPACITY",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGCARD",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGCARDCALLOUTS",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGCARDCORE",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGCARDCORE_TCW",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGCARDDERIVEDATTRIBUTES",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGCARDREAD",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGCARDSWAP",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGCARDSWAPCALLBACKS",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGCARDSWAPXML",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGCARDVALIDATE",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGCARD_CALLBACKS",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGCARD_CALLOUTS",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGCARD_PRIVATE",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGCARD_PRIVATE_TCW",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGCARD_WIZINFO",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGCARD_WIZINFO_TCW",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGCARD_WO",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGCIRCROUTE",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGCIRCROUTEXML",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGCIRCUIT",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGCIRCUITASSISTMONITOR",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGCIRCUITASSIST_CALLBACKS",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGCIRCUITASSIST_CALLBACKS_TCW",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGCIRCUITASSIST_CALLOUTS",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGCIRCUITASSIST_PRIVATE",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGCIRCUITASSIST_PRIVATE1",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGCIRCUITASSIST_WIZINFO",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGCIRCUITASSIST_WIZINFO_TCW",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGCIRCUITASSIST_WO",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGCIRCUITBULKREROUTE",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGCIRCUITBULKREROUTECALLOUTS",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGCIRCUITBULKREROUTECORE",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGCIRCUITBULKREROUTEXML",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGCIRCUITCALLOUTS",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGCIRCUITCORE",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGCIRCUITINFO",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGCIRCUITINFO_CALLOUTS",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGCIRCUITOPERATIONS",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGCIRCUITREAD",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGCIRCUITREAD2",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGCIRCUITRESOLVER",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGCIRCUITROUTING",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGCIRCUITROUTINGCUSTOMRULES",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGCIRCUITROUTINGCUSTOMRULES_CUSTOM",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGCIRCUITROUTINGRULES",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGCIRCUITROUTINGRULES_CUSTOM",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGCIRCUITVALIDATE",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGCIRCUIT_CALLBACKS",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGCIRCUIT_CALLOUTS",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGCIRCUIT_PRIVATE",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGCIRCUIT_PRIVATE2",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGCIRCUIT_PRIVATE_TCW",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGCIRCUIT_TCW",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGCIRCUIT_WIZINFO",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGCIRCUIT_WIZINFO_TCW",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGCIRCUIT_WORKORDER",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGCKTBULKREROUTERESERVATIONS",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGCKTRESERVATIONSEXECPARAMS",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGCLOUD",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGCOMCALLOUT_PLAN",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGCOMSUPPORT",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGCOMSUPPORT_APPIMPACT",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGCOMSUPPORT_APPLICATIONVIEW",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGCOMSUPPORT_ASSET",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGCOMSUPPORT_BUILDTEMPLATE",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGCOMSUPPORT_CABLE",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGCOMSUPPORT_CIRCUIT",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGCOMSUPPORT_CIRCUITTYPE",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGCOMSUPPORT_CONDUIT",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGCOMSUPPORT_CONNEQUIP",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGCOMSUPPORT_CROSSCONNECT",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGCOMSUPPORT_DELIVERYENGINE",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGCOMSUPPORT_ITVIEW",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGCOMSUPPORT_LINK",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGCOMSUPPORT_LOCATION",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGCOMSUPPORT_NODE",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGCOMSUPPORT_PARTITION",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGCOMSUPPORT_PARTITIONPOLICY",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGCOMSUPPORT_PLAN",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGCOMSUPPORT_PROJECT",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGCOMSUPPORT_ROUTEFINDER",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGCOMSUPPORT_SERVICE",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGCOMSUPPORT_SERVICECATALOG",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGCOMSUPPORT_SITE",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGCOMSUPPORT_SYNCENGINE",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGCOMSUPPORT_THRESHOLDDEFN",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGCOMSUPPORT_THRESHOLDPROCESS",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGCOMSUPPORT_THROUGHTRAFFIC",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGCOMSUPPORT_TOPOLOGY",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGCOMSUPPORT_TRAFFICINFO",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGCOMSUPPORT_XYVIEW",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGCOMSUP_CABLECONNECTIVITY",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGCOMSUP_CAPACITYHELPERCALC",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGCOMSUP_CAPACITYHELPERCALC2",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGCOMSUP_CAPACITYHELPERMAIN",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGCOMSUP_CAPACITYHELPERROUTE",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGCOMSUP_CAPACITYHELPERROUTE2",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGCOMSUP_CAPACITYHELPERTOPOBJ",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGCONDUIT",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGCONDUITCALLOUTS",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGCONDUITOPERATIONS",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGCONDUITPERSISTER",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGCONDUITREAD",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGCONDUITROUTE",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGCONDUITROUTECALLOUTS",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGCONDUITSTATE",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGCONDUITXML",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGCONDUIT_PRIVATE",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGCONDUIT_READ",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGCONDUIT_WIZINFO",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGCOPYCIRCUIT",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGCOPYCIRCUIT_CALLBACKS",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGCOPYCIRCUIT_PRIVATE",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGCOPYCIRCUIT_PRIVATE_TCW",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGCOPYCIRCUIT_WIZINFO",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGCOPYCIRCUIT_WIZINFO_TCW",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGCOPYCIRCUIT_WO",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGCOPYOBJECT_CALLBACKS",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGCOPYOBJECT_PRIVATE",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGCOPYOBJECT_PUBLIC",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGCOPYOBJECT_WIZINFO",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGCOPYOBJECT_WIZINFO_TCW",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGCOSPOLICYLOADER",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGCRCUSTOMRULEPATHTRAIL",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGCRCUSTOMRULEPATHTRAIL_CUSTOM",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGCREATEDOCUMENT",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGCREATEDOCUMENT_CALLBACKS",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGCREATEDOCUMENT_PRIVATE",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGCREATEDOCUMENT_PRIVATE_TCW",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGCREATEDOCUMENT_WIZINFO",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGCREATEDOCUMENT_WIZINFO_TCW",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGCREATEDOCUMENT_WO",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGCREATEIMPLPROJECT",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGCREATEIMPLPROJECT_CALLBACKS",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGCREATEIMPLPROJECT_PRIVATE",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGCREATEIMPLPROJECT_WIZINFO",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGCREATELINK",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGCREATELINK_CALLBACKS",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGCREATELINK_PRIVATE",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGCREATELINK_PRIVATE_TCW",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGCREATELINK_READ",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGCREATELINK_WIZINFO",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGCREATELINK_WIZINFO_TCW",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGCREATELINK_WO",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGCREATELOCATION",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGCREATELOCATION_CALLBACKS",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGCREATELOCATION_PRIVATE",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGCREATELOCATION_PRIVATE_TCW",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGCREATELOCATION_WIZINFO",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGCREATELOCATION_WIZINFO_TCW",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGCREATELOCATION_WO",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGCREATENUMBER",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGCREATENUMBER_CALLBACKS",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGCREATENUMBER_PRIVATE",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGCREATENUMBER_PRIVATE_TCW",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGCREATENUMBER_WIZINFO",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGCREATENUMBER_WIZINFO_TCW",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGCREATENUMBER_WO",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGCREATEPROJECT",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGCREATEPROJECT2",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGCREATEPROJECT2_PRIVATE",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGCREATEPROJECT2_WIZINFO",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGCREATEPROJECT2_WIZINFO_TCW",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGCREATEPROJECT2_WO",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGCREATEPROJECT_PRIVATE",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGCREATEPROJECT_WIZINFO",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGCREATEPROJECT_WIZINFO_TCW",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGCREATEPROJECT_WO",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGCREATERACK",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGCREATERACK_CALLBACKS",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGCREATERACK_PRIVATE",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGCREATERACK_PRIVATE_TCW",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGCREATERACK_WIZINFO",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGCREATERACK_WIZINFO_TCW",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGCREATERACK_WO",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGCREATESERVICE",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGCREATESERVICE_CALLBACKS",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGCREATESERVICE_PRIVATE",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGCREATESERVICE_PRIVATE_TCW",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGCREATESERVICE_WIZINFO",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGCREATESERVICE_WIZINFO_TCW",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGCREATESERVICE_WO",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGCREATETOPOLOGY2",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGCREATETOPOLOGY2_CALLBACKS",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGCREATETOPOLOGY2_DELTAWO",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGCREATETOPOLOGY2_PRIVATE",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGCREATETOPOLOGY2_PRIVATE_TCW",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGCREATETOPOLOGY2_WIZINFO",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGCREATETOPOLOGY2_WIZINFO_TCW",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGCREATETOPOLOGY2_WO",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGCROSSCONNECT",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGCROSSCONNECTION",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGCROSSCONNECTIONCALLBACKS",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGCROSSCONNECTIONCALLOUTS",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGCROSSCONNECTIONCORE",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGCROSSCONNECTIONPRIVATE",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGCROSSCONNECTIONPUBLIC",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGCROSSCONNECTIONVALIDATE",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGCROSSCONNECTIONWORKORDER",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGCROSSCONNECTION_WIZINFO",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGCROSSCONNECTION_WIZINFO_TCW",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGCROSSCONNECT_CALLBACKS",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGCROSSCONNECT_PRIVATE",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGCROSSCONNECT_PRIVATE_TCW",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGCROSSCONNECT_WIZINFO",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGCROSSCONNECT_WIZINFO_TCW",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGCROSSCONNECT_WO",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGCUSTPOPULATEDATE",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGDATALOADCARD",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGDATALOADCARD_TCW",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGDATALOADCROSSCONNECTION",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGDATALOADCROSSCONNECTION_TCW",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGDATANAMINGCALLOUTS",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGDATAPOOL",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGDATAUTILISATION",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGDEHTTPCLIENT",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGDEHTTPGATEWAY",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGDELETE",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGDELETE_CALLBACKS",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGDELETE_PRIVATE",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGDELETE_WIZINFO",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGDELETE_WIZINFO_TCW",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGDELETE_WO",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGDELTADR",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGDENORMALIZATIONMAINTENANCE",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGDERIVEDRELATIONS",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGDEVICEDERIVEDATTRIBUTES",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGDEVICEGROUP",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGDEVICEGROUPPERSISTER",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGDEVICEGROUPSTATE",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGDEVICEGROUPXML",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGDEVICEPLACEMENT_PRIVATE",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGDEVICEPLACEMENT_READ",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGDEVICEPLACEMENT_WIZINFO",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGDEVICEWC",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGDEVICEWC_PRIVATE",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGDEVICEWC_PRIVATE_TCW",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGDEVICEWC_WO",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGDEVICEWIZARD_WIZINFO",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGDEVICEWIZARD_WIZINFO_TCW",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGDEVICE_CALLBACKS",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGDICTIONARYFUNCTIONS",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGDIM2XML",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGDIMCONNECTION",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGDIMENSIONCONSTANTS",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGDIMENSIONOBJECT",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGDIMENSIONPARAMETER",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGDIMENTITY",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGDIMENTITYCALLBACKS",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGDIMENTITYCALLOUTS",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGDIMENTITYPERSISTER",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGDIMENTITYPRIVATE",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGDIMENTITYPUBLIC",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGDIMENTITYREAD",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGDIMENTITYSTATE",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGDIMENTITYWIZINFO",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGDIMENTITYWIZINFO_TCW",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGDIMENTITYWORKORDER",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGDIMENTITYXML",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGDIMENTITY_TCW",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGDIMNUMBER",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGDIMNUMBERPERSISTER",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGDIMNUMBERREAD",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGDIMNUMBERSTATE",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGDIMNUMBERVALIDATOR",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGDIMNUMBERXML",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGDIMUSER",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGDIMWIZPROTSUP",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGDIMWIZSUP",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGDIMWIZSUP_CALLBACKS",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGDIMWIZSUP_TCW",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGDIRECTORY",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGDIVIDECABLE_PRIVATE",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGDIVIDECABLE_READAPI",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGDIVIDECABLE_WIZINFO",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGDIVIDECIRCUITS",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGDIVIDECIRCUITS_CALLBACKS",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGDIVIDECIRCUITS_PRIVATE",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGDIVIDECIRCUITS_WIZINFO",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGDIVIDECIRCUITS_WIZINFO_TCW",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGDIVIDECIRCUITS_WO",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGDIVIDECONDUIT_PRIVATE",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGDIVIDECONDUIT_READAPI",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGDIVIDECONDUIT_WIZINFO",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGDNCMVALIDATION",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGDOCUMENT",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGDOMAIN",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGDOMAINWIZ",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGDOMAIN_CALLBACKS",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGDOMAIN_PRIVATE",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGDOMAIN_TCW",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGDOMAIN_WIZINFO",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGDOMAIN_WIZINFO_TCW",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGDOMAIN_WO",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGDYNAMICDATACALLOUTS",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGENCRYPT",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGENUMERATION",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGERROR",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGEVENT",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGEVENTCALLOUTS",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGEXECDYNAMICJAVA",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGEXECDYNAMICSQL",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGEXECPARAMS",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGEXPORTDIM",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGEXPORTINFO",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGEXPORTSETTINGS",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGEXPORTXML",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGEXTRACTOR",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGFILTERSET",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGFILTERSETTYPE",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGFIND",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGFINDQUERY",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGFIND_PRIVATE",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGFIND_WIZINFO",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGFIND_WIZINFO_TCW",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGFOLDER",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGGENERAL",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGGENERALSTATE",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGGENERICCALLOUTS",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGGENERICCALLOUT_PUBLIC",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGGLOBALIZE",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGICTOPMAINTENANCE",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGIMPLPROJECT_WIZINFO_TCW",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGIMPORT",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGIMPORTBTWORKORDER",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGINDICATOR",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGINDICATORCALLOUTS",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGINDICATOR_PRIVATE",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGINSERTDEVICE",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGINSERTDEVICE_CALLBACKS",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGINSERTDEVICE_PRIVATE",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGINSERTDEVICE_WIZINFO",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGINSERTDEVICE_WIZINFO_TCW",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGINSERTDEVICE_WO",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGINTEGER",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGINTEGRITY",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGINTEGRITYCHECK",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGINVENTORYATTRIBUTES",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGIP",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGIPV6",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGITMDYNAMICCALLOUTS",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGITMNAMINGCALLOUTS",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGJOB",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGJOBCALLOUTS",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGJOBCALLOUTS_PRIVATE",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGJOBCALLOUTS_PRIVATE_TCW",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGJOBIMPLEMENTATION",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGJOBIMPLEMENTATION_TCW",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGJOBNAMECALLOUTS",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGJOBPLANNING",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGJOBPLANNINGWIZARD",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGJOBPLANNINGWIZARD_PRIVATE",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGJOBPLANNINGWIZARD_WIZINFO",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGJOBPLANNINGWIZ_WIZINFO_TCW",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGJOBPLANNING_TCW",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGJOBXMLUTILS",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGJOBXMLUTILS_TCW",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGJOBXML_PUBLIC",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGJOB_TCW",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGJOB_WIZINFO",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGJOB_WIZINFO_TCW",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGJOINCIRCUITS",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGJOINCIRCUITS_CALLBACKS",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGJOINCIRCUITS_PRIVATE",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGJOINCIRCUITS_PRIVATE_TCW",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGJOINCIRCUITS_WIZINFO",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGJOINCIRCUITS_WIZINFO_TCW",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGJOINCIRCUITS_WO",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGJOINCONDUITS_PRIVATE",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGJOINCONDUITS_READAPI",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGJOINCONDUITS_WIZINFO",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGLDAPACCESSOR",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGLDAPCACHEACCESSOR",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGLINK",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGLINKCALLOUTS",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGLINKCORE",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGLINKOPERATIONS",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGLINKPERSISTER",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGLINKREAD",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGLINKROUTE_PRIVATE",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGLINKROUTE_WIZINFO",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGLINKSTATE",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGLINKVALIDATE",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGLINKXML",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGLINK_TCW",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGLOCATION",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGLOCATIONCALLOUTS",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGLOCATION_TCW",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGLOCK",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGLOCKCONSTANTS",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGLOG",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGLOGGER",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGLOGGER_DBMS_OUTPUT",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGLOGGER_DEBUGLOG",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGLOGGER_JAVA",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGLOGGER_SIMPLE_FORMATTER",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGLOGICALCCPERSISTER",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGLOGICALCCSTATE",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGLOGICALCCWIZARD_READ",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGLOGICALCCWIZARD_WIZINFO",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGLOGICALCCXML",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGLOGICALENVIRONMENT",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGLOGICALENVIRONMENTHELPER",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGLOGICALENVIRONMENTPERSISTER",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGLOGICALENVIRONMENTREAD",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGLOGICALENVIRONMENTSTATE",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGLOGICALENVIRONMENTXML",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGLOGICALENVIRONMENT_PRIVATE",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGLOGICALENVIRONMENT_TCW",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGLOGICALENVIRONMENT_WIZINFO",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGLOGICALPORTWIZARD_CALLBACKS",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGLOGICALPORTWIZARD_READ",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGLOGICALPORTWIZARD_WIZINFO",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGMIGRATEPLAN_PRIVATE",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGMIGRATEPLAN_WIZINFO",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGMIGRATEPLAN_WIZREAD",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGMODIFYATTRIBS_PRIVATE_TCW",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGMODIFYATTRIBS_WIZINFO_TCW",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGMODIFYATTRIBUTES",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGMODIFYATTRIBUTES_CALLBACKS",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGMODIFYATTRIBUTES_PRIVATE",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGMODIFYATTRIBUTES_WIZINFO",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGMODIFYATTRIBUTES_WO",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGMODIFYLINK_CALLBACKS",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGMODIFYLINK_CALLOUTS",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGMODIFYLINK_PRIVATE",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGMODIFYLINK_PRIVATE_TCW",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGMODIFYLINK_WIZINFO",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGMODIFYLINK_WIZINFO_TCW",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGMODIFYLINK_WORKORDER",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGNAMING",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGNODE",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGNODEBULKCALLOUTS",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGNODECALLOUTS",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGNODECORE",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGNODEREAD",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGNODEVALIDATE",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGOBJECTSACROSSPLANCALLOUT",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGOWIUTIL",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGOWNER",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGOWNER_A",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGOWNER_B",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGOWNER_CALLOUTS",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGPARAMETERIZATIONMATHS",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGPARAMETERIZATIONREAD",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGPARAMETERIZATIONSTATE",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGPARAMETERIZATIONXML",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGPARAMETERSET",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGPARAMETERSETNAMINGCALLOUTS",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGPARAMETERSETPERSISTER",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGPARAMETERSETREAD",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGPARAMETERSETSTATE",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGPARAMETERSETUTILS",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGPARAMETERSETVERSIONREAD",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGPARAMETERSETVERSIONSTATE",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGPARAMETERSETXML",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGPARAMETERSET_PRIVATE",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGPARAMETERSET_READ",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGPARAMETERSET_TCW",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGPARAMETERSET_WIZINFO",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGPARTITION",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGPARTITIONCORE",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGPARTITIONCORE_TCW",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGPARTITIONHELPER",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGPARTITIONPERSISTER",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGPARTITIONPOLICY",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGPARTITIONPOLICYPERSISTER",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGPARTITIONPOLICYREAD",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGPARTITIONPOLICYSTATE",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGPARTITIONPOLICYXML",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGPARTITIONPOLICY_PRIVATE",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGPARTITIONPOLICY_WIZINFO",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGPARTITIONPOLICY_WO",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGPARTITIONREAD",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGPARTITIONREAD2",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGPARTITIONSTATE",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGPARTITIONVALIDATE",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGPARTITIONVALIDATE_TCW",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGPARTITIONXML",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGPARTITION_TCW",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGPHYSICALPATH",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGPHYSICALPATH_CALLBACKS",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGPKGRETVALMAP",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGPLAN_PRIVATE",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGPLAN_WIZINFO",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGPLAN_WIZREAD",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGPORT",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGPORTAGGR",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGPORTAGGR_CALLBACKS",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGPORTAGGR_PRIVATE",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGPORTAGGR_WIZINFO",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGPORTAGGR_WIZINFO_TCW",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGPORTAGGR_WO",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGPORTBULKCALLOUTS",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGPORTCALLOUTS",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGPORTCORE",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGPORTPERSISTER",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGPORTREAD",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGPORTSTATE",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGPORTTOPOLOGYAPPLICABILITY",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGPORTVALIDATE",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGPORTVALIDATE_TCW",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGPORTXML",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGPOSTAPPLYUTILS",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGPRECABLINGWC_CALLBACKS",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGPRECABLINGWC_PRIVATE",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGPRECABLINGWC_PUBLIC",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGPRECABLINGWC_WIZINFO",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGPRECABLINGWC_WIZINFO_TCW",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGPRECABLINGWC_WORKORDER",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGPROCESSJOB",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGPROCESSJOB_PRIVATE",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGPROCESSJOB_WIZINFO",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGPROCESSJOB_WIZINFO_TCW",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGPROCESSTASKS",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGPROCESSTASKS_PRIVATE",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGPROCESSTASKS_PRIVATE_TCW",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGPROCESSTASKS_WIZINFO",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGPROCESSTASKS_WIZINFO_TCW",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGPRODUCT",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGPRODUCTFAMILY",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGPRODUCTFAMILYREAD",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGPRODUCTFAMILYSTATE",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGPRODUCTFAMILYXML",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGPRODUCTREAD",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGPRODUCTSTATE",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGPRODUCTUTILS",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGPRODUCTXML",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGPROJECT",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGPROJECTPLANNING",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGPROJECTPLANNING_TCW",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGPROJTASK",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGPROJTASKCALLOUTS",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGPROJTASK_TCW",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGPROTECTION",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGPROTECTION_MSSPRING",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGPROTECTION_SNCP",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGQUICKFIND",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGQUICKFINDCONFIGURATION",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGQUICKFINDCONFIG_PRIVATE",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGQUICKFINDCONFIG_WIZINFO",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGQUICKFIND_PRIVATE",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGQUICKFIND_PRIVATE_TCW",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGQUICKFIND_WIZINFO",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGQUICKFIND_WIZINFO_TCW",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGRACK",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGRACKENHANCEMENTS",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGREDUNDANCYGROUP",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGREDUNDANCYGROUPHELPER",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGREDUNDANCYGROUPPERSISTER",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGREDUNDANCYGROUPREAD",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGREDUNDANCYGROUPSTATE",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGREDUNDANCYGROUPXML",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGREDUNDANCYGROUP_PRIVATE",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGREDUNDANCYGROUP_TCW",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGREDUNDANCYGROUP_WIZINFO",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGREHOME",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGREHOMEEXEC",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGREHOMEREAD",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGREHOMEVALIDATE",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGREHOMEXML",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGRELATIONSHIP",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGRESERVATION",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGRESERVATIONCALLOUTS",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGRESERVATIONDR",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGRESERVATIONREAD",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGRESERVATIONWIZARD_READ",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGRESERVATIONWRITE",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGRESERVECONTAINED",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGRESOURCEPLANNERBRIDGE",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGRESOURCEPOOL",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGRFLOG",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGRPMIGRATEPLANPERSISTER",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGRPMIGRATEPLANSTATE",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGRPPLAN",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGRPPLANBULKDELETE",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGRPPLANBULKDELETEUTILS",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGRPPLANCALLBACKS",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGRPPLANCALLOUTS",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGRPPLANCONSTANTSUTILS",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGRPPLANDELETIONTRACKING",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGRPPLANMIGRATEPREPROCESS",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGRPPLANPERSISTER",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGRPPLANPOPULATIONCLEAR",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGRPPLANREAD",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGRPPLANSTATE",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGRPTRANSPARENTPLANCHECKS",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGRPUPGRADE",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGRPUPGRADE_GENENTITY",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGRPUPGRADE_OBJECTS",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGRPUPGRADE_SATELLITE",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGSATELLITETABLE",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGSCHEDULE",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGSCHEDULEPERSISTER",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGSCHEDULEREAD",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGSCHEDULESTATE",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGSCORDER",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGSDMCODES",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGSDMCONSTANTS",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGSDMEVENT",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGSDMPRIVATESUPPORT",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGSDMPROJECT",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGSDMPROJECT_TCW",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGSDMSUPPORT",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGSDMSUPPORT_TCW",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGSDMTASKREFERENCE",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGSDMTASKREFERENCE_TCW",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGSDMWILDCARDS",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGSDMWIZARDIDS",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGSDMWRAPPERS",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGSECURITYLOG",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGSELOGGER",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGSERVICE",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGSERVICECALLOUTS",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGSERVICECOMPONENT",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGSERVICECOMPONENTREAD",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGSERVICECOMPONENTSTATE",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGSERVICECOMPONENTXML",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGSERVICEPERSISTER",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGSERVICEREAD",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGSERVICESTATE",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGSERVICEXML",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGSESSION",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGSESSIONCALLOUTS",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGSESSIONCONTEXT",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGSESSIONJOB",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGSESSIONROLES",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGSESSION_TCW",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGSFAORDER",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGSHELFREAD",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGSIACCESS",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGSICONFIG",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGSICONSTANTS",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGSIINSTALL",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGSILABELCACHE",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGSILABELMAINTENANCE",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGSILABELSYNC",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGSILOAD",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGSILOGGER",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGSIMCONSTANTS",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGSIPARTITIONCACHE",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGSIRUNTIME",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGSITABLECACHE",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGSITE",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGSITECALLOUTS",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGSITEGEOMETRY",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGSITEPERSISTER",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGSITEPLANNERBRIDGE",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGSITEREAD",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGSITESTATE",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGSITEVIEWUTILS",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGSITEVIEWWIZARD_PRIVATE",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGSITEWIZARDREAD",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGSITEWIZARD_PRIVATE",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGSITEWIZARD_WIZINFO",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGSITEXML",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGSITEXMLUTILS",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGSOFTWORKORDER",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGSOFTWORKORDERADDOBJECTS",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGSOFTWORKORDERAPPLY",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGSOFTWORKORDERCALLOUTS",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGSOFTWORKORDERCREATE",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGSOFTWORKORDERPROCESS",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGSOFTWORKORDERREAD",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGSOFTWORKORDERREAD_TCW",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGSOFTWORKORDERROLLBACK",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGSOFTWORKORDERWRITE",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGSOFTWORKORDERWRITEROLLBACK",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGSPCALLOUTSWRAPPER",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGSPUNITS",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGSPUNITSCALLOUTS",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGSTRINGINTEGER",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGSTRINGINTEGERRT",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGSUBSCRIBER",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGSUBSCRIBERCALLOUTS",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGSUBSCRIBER_CALLBACKS",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGSUBSCRIBER_CALLOUTS",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGSUBSCRIBER_PRIVATE",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGSUBSCRIBER_WIZINFO",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGSUBSCRIBER_WIZINFO_TCW",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGSUBSCRIBER_WORKORDER",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGSWOPROC_ADDSHELF",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGSWOPROC_AGGREGATEPORT",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGSWOPROC_CARD",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGSWOPROC_CIRCUIT",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGSWOPROC_DEVICE",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGSWOPROC_DIVIDECIRCUIT",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGSWOPROC_DIVIDELINK",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGSWOPROC_DOCUMENT",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGSWOPROC_DOMAIN",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGSWOPROC_DYNAMICTIMESLOT",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGSWOPROC_ENTITY",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGSWOPROC_JOINCIRCUITS",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGSWOPROC_LINK",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGSWOPROC_LOCATION",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGSWOPROC_MODIFYATTRIBUTES",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGSWOPROC_NUMBER",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGSWOPROC_PARTITIONPOLICY",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGSWOPROC_PORT",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGSWOPROC_PRECABLING",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGSWOPROC_RESOURCEPOOL",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGSWOPROC_SERVICE",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGSWOPROC_SLOT",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGSWOPROC_SUBSCRIBER",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGSWOPROC_TOPOLOGY",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGSWOPROC_XCONNECTION",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGSWO_ASSET",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGSYNCCORRELATION_PUBLIC",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGSYNCCORRELATION_UDMSTANDARD",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGSYNCDIFF",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGSYNCDIFFFILTER_PRIVATE",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGSYNCDIFFFILTER_PUBLIC",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGSYNCDIFFFILTER_WIZINFO",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGSYNCDIFFFILTER_WIZINFO_TCW",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGSYNCDIFFPROCUTILS",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGSYNCDIFF_PUBLIC",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGSYNCDISCREPANCY",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGSYNCENGINECONSTANTS",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGSYNCENGINEDBMSJOB",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGSYNCEXTFILTERCALLOUTS",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGSYNCIMPORTEXPORT",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGSYNCIMPORTEXPORT_PRIVATE",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGSYNCLOCKING_PUBLIC",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGSYNCPROCESS",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGSYNCPROCESSCALLOUTS",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGSYNCPROCESSPRIVATE",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGSYNCPROCESSPUBLIC",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGSYNCPROCESSSERVLET",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGSYNCPROCESSWIZINFO",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGSYNCPROCESSWIZINFO_TCW",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGSYNCPROCESS_PUBLIC",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGSYNCPROFILE",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGSYNCPROFILECALLBACKS",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGSYNCPROFILEPRIVATE",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGSYNCPROFILEPRIVATE_TCW",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGSYNCPROFILEPUBLIC",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGSYNCPROFILEWIZINFO",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGSYNCPROFILEWIZINFO_TCW",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGSYNCRULECALLBACKS",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGSYNCRULEPRIVATE",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGSYNCRULEPUBLIC",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGSYNCRULE_WIZINFO",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGSYNCRULE_WIZINFO_TCW",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGSYNCSCHEDULE",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGSYNCSCHEDULECALLBACKS",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGSYNCSCHEDULEPRIVATE",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGSYNCSCHEDULEPUBLIC",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGSYNCSCHEDULEWIZINFO",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGSYNCSCHEDULEWIZINFO_TCW",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGSYNCSUPPORT",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGSYNCUDMGENERATOR",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGSYNCUPKCACHE",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGSYNCVNCACHE",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGS_UTILS",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGTECHNICIAN",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGTECHNOLOGYOPTION",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGTECHNOLOGYOPTIONREAD",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGTECHNOLOGYOPTIONSTATE",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGTECHNOLOGYOPTIONXML",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGTESTCARDSWAP2",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGTETDMBRIDGE",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGTHRESHOLDDEFINITION_PRIVATE",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGTHRESHOLDDEFINITION_WIZINFO",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGTHRESHOLDDEFINITION_WIZREAD",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGTHRESHOLDDEFN",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGTHRESHOLDDEFNPERSISTER",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGTHRESHOLDDEFNREAD",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGTHRESHOLDDEFNSTATE",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGTHRESHOLDMANAGERCALLOUTS",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGTHRESHOLDMANAGERCONSTANTS",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGTHRESHOLDSCHEDULE_PRIVATE",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGTHRESHOLDSCHEDULE_WIZINFO",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGTHRESHOLDSCHEDULE_WIZREAD",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGTIMESLOT",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGTIMESLOTCALLOUTS",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGTIMESLOTCORE",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGTIMESLOTCORE_TCW",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGTIMESLOTREAD",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGTIMESLOTVALIDATE",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGTIMESLOTVALIDATE_TCW",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGTMACTIONCALLOUTS",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGTMF639EVENT",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGTMGUARDCALLOUTS",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGTMMEASURECALLOUTS",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGTMSPMEASURECALLOUTS",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGTOPOLOGY",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGTOPOLOGYCALLOUTS",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGTOPOLOGYM",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGTOPOLOGYPERSISTER",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGTOPOLOGYREAD",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGTOPOLOGYSTATE",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGTOPOLOGYWIZARD_CALLOUTS",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGTOPOLOGYXML",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGTOPOLOGY_TCW",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGTRANSPARENTPLANCONVERT",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGTRANSPARENTPLANSFUNCTIONS",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGTRANSPARENTPLANTRIGGERHELP",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGTREELEVEL",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGUNDOTASKS",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGUNDOTASKS_PRIVATE",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGUNDOTASKS_PRIVATE_TCW",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGUNDOTASKS_WIZINFO",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGUNDOTASKS_WIZINFO_TCW",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGUNRESOLVED",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGUPDATEPLANFKCOLUMNS",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGUPDATESPOSTPRODUCTION",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGUSER",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGUSERINFOXMLUTILS",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGUSERLOCK",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGUSMSECURITY",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGUTMSUPPORT",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGWAVELENGTH",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGWOCOPY_DEVICE",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGWODIMOBJECTXMLUTILS",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGWORKORDER",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGWORKORDERCOPY",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGWORKORDERCOPYCALLOUTS",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGWORKORDERPERSISTER",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGWORKORDERSTATE",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGWORKORDERWIZARD",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGWORKORDERWIZARD_CALLBACKS",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGWORKORDERWIZARD_PRIVATE",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGWORKORDERWIZARD_PRIVATE_TCW",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGWORKORDERWIZARD_WIZINFO",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGWORKORDERWIZARD_WIZINFO_TCW",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGWORKORDERXMLUTILS",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGWORKSPACE",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGWRAPPERS",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGWRAPPERSUPPORT",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGWRITEROLLBACK_ADDSHELF",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGWRITEROLLBACK_AGGPORT",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGWRITEROLLBACK_CARD",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGWRITEROLLBACK_CIRCUIT",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGWRITEROLLBACK_DEVICE",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGWRITEROLLBACK_DIVIDECIRCUIT",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGWRITEROLLBACK_DIVIDELINK",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGWRITEROLLBACK_DOCUMENT",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGWRITEROLLBACK_DOMAIN",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGWRITEROLLBACK_DYNAMICTIMESLOT",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGWRITEROLLBACK_ENTITY",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGWRITEROLLBACK_JOINCIRCUIT",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGWRITEROLLBACK_LINK",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGWRITEROLLBACK_LOCATION",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGWRITEROLLBACK_MODIFYATTRS",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGWRITEROLLBACK_NUMBER",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGWRITEROLLBACK_PARENT",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGWRITEROLLBACK_PORT",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGWRITEROLLBACK_PPOLICY",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGWRITEROLLBACK_PRECABLING",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGWRITEROLLBACK_SERVICE",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGWRITEROLLBACK_SLOT",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGWRITEROLLBACK_SUBSCRIBER",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGWRITEROLLBACK_TOPOLOGY",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGWRITEROLLBACK_XCONNECTION",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGXMLREAD",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGXMLREADWRITE",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGXMLWRITE",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGXYVIEWLAYOUT",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGXYVIEWLAYOUTCALLOUTS",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGZONE",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGZONECALLOUTS",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "PKGZONEXML",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "SYNCVALIDATIONS",
+      "type": "PACKAGE",
+      "status": "VALID"
+    },
+    {
+      "name": "CHANGELIVECHANGEPENDINGCIRCUITPROVISIONSTATUS",
+      "type": "PROCEDURE",
+      "status": "VALID"
+    },
+    {
+      "name": "CHANGELIVECHANGEPENDINGTOPOLOGYPROVISIONSTATUS",
+      "type": "PROCEDURE",
+      "status": "VALID"
+    },
+    {
+      "name": "CPE_A_Z_PORT_LOGICAL_PROC",
+      "type": "PROCEDURE",
+      "status": "VALID"
+    },
+    {
+      "name": "CPE_UPLOAD",
+      "type": "PROCEDURE",
+      "status": "VALID"
+    },
+    {
+      "name": "CPE_UPLOAD_LINK",
+      "type": "PROCEDURE",
+      "status": "VALID"
+    },
+    {
+      "name": "CREATEWORKORDERFORPORTATTR",
+      "type": "PROCEDURE",
+      "status": "VALID"
+    },
+    {
+      "name": "GNM_COPY_CARD_ATTRIBUTES",
+      "type": "PROCEDURE",
+      "status": "VALID"
+    },
+    {
+      "name": "GNM_COPY_NODE_ATTRIBUTES",
+      "type": "PROCEDURE",
+      "status": "VALID"
+    },
+    {
+      "name": "GNM_COPY_PORT_ATTRIBUTES",
+      "type": "PROCEDURE",
+      "status": "VALID"
+    },
+    {
+      "name": "GNM_COPY_SATELLITE_ATTRS",
+      "type": "PROCEDURE",
+      "status": "VALID"
+    },
+    {
+      "name": "PROC_CUST_TX_RX_NO_OVERLYING_CKT",
+      "type": "PROCEDURE",
+      "status": "VALID"
+    },
+    {
+      "name": "TMFCLEANUP",
+      "type": "PROCEDURE",
+      "status": "VALID"
+    },
+    {
+      "name": "VALIDATEALLOWCHANGEDBYOPC",
+      "type": "PROCEDURE",
+      "status": "VALID"
+    }
+  ]
+}

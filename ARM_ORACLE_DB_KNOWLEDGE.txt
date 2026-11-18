@@ -1,0 +1,117 @@
+# ARM Oracle Database (CRAMER Schema) Knowledge Base & Grounding Reference
+
+## 1. Domain Context & Terminology
+- **ARM / Cramer**: Application Resource Management / Cramer Inventory Management System. It tracks network infrastructure, physical locations, nodes, shelves, slots, cards, ports, and circuits.
+- **ARM is NOT CPU hardware**: Never interpret ARM as Arm processor architecture.
+- **Database Engine**: Oracle Database (Service: `AZT01ARM`, Host: `azimtdb101:1521`, Owner/Schema: `CRAMER`).
+- **Catalog Size**: 1,178 tables and 1,143 PL/SQL stored procedures/packages.
+
+---
+
+## 2. Core Operational Tables (Verified from Live Oracle Database)
+
+### 1. `CRAMER.LOCATION_O` (407,324 records)
+Stores physical sites, buildings, data centers, and geographic rooms.
+- **Primary Key**: `LOCATIONID` (NUMBER)
+- **Key Columns**:
+  - `NAME`: Short location code / site identifier (e.g., site name).
+  - `FULLNAME`: Fully qualified hierarchical location name.
+  - `RELATIVENAME`: Local name within parent location.
+  - `SUBTYPE`: Type classification (e.g., Data Center, POP, Exchange, Site).
+  - `SUBSTATUS`: Operational state (e.g., Active, Planned, Decommissioned).
+  - `ADDRESS`, `TOWNCITY`, `POSTCODE`, `COUNTRY`: Physical address details.
+
+### 2. `CRAMER.NODE_O` (1,413,523 records)
+Represents physical devices, routers, switches, and network elements.
+- **Primary Key**: `NODEID` (NUMBER)
+- **Key Columns**:
+  - `NAME`: Node / Device name (e.g., hostname).
+  - `FULLNAME`: Fully qualified node name.
+  - `SUBTYPE`: Device model / subtype (e.g., Cisco ASR, Juniper MX, Ciena).
+  - `SUBSTATUS`: Operational status (In Service, Planned, Reserved).
+  - `NODE2LOCATION`: Foreign key linking to `LOCATION_O.LOCATIONID`.
+  - `NODE2DEVICEGROUP`: Device grouping reference.
+  - `DESCRIPTION`, `NOTES`: Configuration comments and tags.
+
+### 3. `CRAMER.SHELF_O` (440,678 records) & `CRAMER.SLOT_O` (3,437,420 records)
+Defines chassis frames, sub-racks, and physical slot capacities.
+- `SHELFID`, `SLOTID`: Primary identifiers.
+- `NAME`, `FULLNAME`, `SUBTYPE`, `SUBSTATUS`.
+- `SLOT_O` links to `SHELF_O` representing physical slots available for hardware insertion.
+
+### 4. `CRAMER.CARD_O` (1,949,795 records) & `CRAMER.CARDINSLOT_O`
+Represents physical line cards, interface modules, and adapters.
+- **Table `CARD_O`**:
+  - `CARDID`: Unique card identifier.
+  - `NAME`, `FULLNAME`, `SUBTYPE`, `SUBSTATUS`.
+  - `CARD2CARDTYPE`: Definition of card hardware type.
+- **Table `CARDINSLOT_O`** (Containment link):
+  - `CARDINSLOT2CARD` -> `CARD_O.CARDID`
+  - `CARDINSLOT2SLOT` -> `SLOT_O.SLOTID`
+  - `SLOTPOSITION`, `SLOTUNITS`: Physical position and units occupied.
+
+### 5. `CRAMER.PORT_O` (18,438,520 records)
+Physical and logical interfaces/ports.
+- **Primary Key**: `PORTID` (NUMBER)
+- **Key Columns**:
+  - `NAME`: Interface name (e.g., GigabitEthernet0/0/1, TenGigE0/1/0/0).
+  - `FULLNAME`: Complete port path.
+  - `SUBTYPE`: Port specification (10GE, 100GE, STM-16, etc.).
+  - `PORT2CARD`: Foreign key linking to `CARD_O.CARDID`.
+  - `SUBSTATUS`: Status (Active, Spare, Reserved, Faulty).
+
+### 6. `CRAMER.CIRCUIT_O` (1,102,973 records)
+Tracks logical circuits, service paths, and bandwidth allocations.
+- **Primary Key**: `CIRCUITID` (NUMBER)
+- **Key Columns**:
+  - `NAME`: Circuit ID / reference identifier.
+  - `SUBTYPE`: Circuit rate/type (e.g., 10G Wave, IP Transit, Dark Fiber, MPLS).
+  - `SUBSTATUS`: State (Active, Provisioning, Ceased).
+  - `CIRCUIT2CIRCUITTYPE`: Circuit definition lookup.
+
+### 7. Physical Placement & Relationships
+- **`NODEINRACKSHELF_O`**: Maps which Node / Shelf is placed into which rack frame (`NIRS2NODE`, `NIRS2RACKSHELF`, `SHELFUNITS`, `XPOS`, `YPOS`, `ZPOS`).
+
+---
+
+## 3. High-Value PL/SQL Packages & Stored Procedures (Live Verified)
+
+### A. Standalone Lookup & Calculation Functions
+1. **`CRAMER.GETATTRVALUE(I_ID NUMBER, I_DIMOBJECID NUMBER, ATTR_NAME VARCHAR2) RETURN VARCHAR2`**
+   - Resolves dynamic or user-defined attributes on any object (e.g., VLAN ID, Serial Number, Manufacturer).
+2. **`CRAMER.GETCIRCUITBANDWIDTH(I_ID NUMBER, I_PLANID NUMBER) RETURN VARCHAR2`**
+   - Returns the provisioned bandwidth (e.g., 10Gbps, 100Gbps) for a given circuit ID.
+3. **`CRAMER.GETCARDINSLOTGLOBAL(I_SLOTID NUMBER, I_PLANID NUMBER) RETURN VARCHAR2`**
+   - Returns the card name/ID currently installed in a specific physical slot.
+4. **`CRAMER.GETCIRCUITNAMEBYPORTID(I_ID NUMBER) RETURN VARCHAR2`**
+   - Identifies which active circuit terminates on a specific port.
+5. **`CRAMER.GETCARDTYPE(I_ID NUMBER, I_PLANID NUMBER) RETURN VARCHAR2`**
+   - Fetches the manufacturer hardware model and card specification.
+6. **`CRAMER.GETCIRCUITPATHLINK(I_CIRCUITID NUMBER, I_PLANID NUMBER) RETURN NUMBER`**
+   - Returns the routing / path link identifier for an end-to-end circuit.
+
+### B. Core Operational Packages
+1. **`CRAMER.PKGANNFBR_CARD`**:
+   - `CARD2ALLCIRCUITS(I_CARDIDS IN TABLE)`: Traverses all circuits passing through a specific card or interface.
+2. **`CRAMER.PKGANNFBR_DEVICE`**:
+   - `DEVICE2ADDABLELOGPORTTYPE(I_NODEIDS IN TABLE)`: Checks compatible logical port types for a node.
+   - `DEVICE2ADDABLESHELFTYPE(I_NODEIDS IN TABLE)`: Checks compatible shelf expansion types.
+   - `DEVICE2TOPOLOGYTYPE(I_NODEIDS IN TABLE)`: Returns network topology role for the device.
+3. **`CRAMER.PKGANNFBR_PORT`**:
+   - `PORT2CHILDPORTTYPE(I_PORTIDS IN TABLE)`: Resolves sub-interfaces and channels.
+   - `PORT2CROSSCONNECTIONTYPE(I_PORTIDS IN TABLE)`: Identifies cross-connect cables and patch panels.
+4. **`CRAMER.PKGADDSHELF` & `CRAMER.PKGADDSHELF_WO`**:
+   - Shelf provisioning, slot template validation, and Work Order XML generation (`WRITEWORKORDERXML`).
+5. **`CRAMER.PKGACTIVITYCOMSUPPORT_LOCATION`**:
+   - `GETACTIVITYDETAILSFROMLOCATION`: Returns planned work orders, maintenance events, and activities per site.
+
+---
+
+## 4. Query Rules for the Agent
+1. **Always prefix schema with `CRAMER.`** (e.g., `CRAMER.LOCATION_O`, `CRAMER.NODE_O`).
+2. **Standard Filter Pattern**:
+   - Location lookup: `WHERE UPPER(NAME) LIKE '%LON01%'`
+   - Node lookup: `WHERE UPPER(NAME) LIKE '%ROUTER01%' AND SUBSTATUS = 'In Service'`
+3. **Safety Constraints**:
+   - Only execute `SELECT` statements or read-only function lookups. Never execute `DROP`, `TRUNCATE`, or unconstrained `UPDATE`.
+   - Apply `WHERE ROWNUM <= 50` on broad searches to keep responses fast and within token limits.
